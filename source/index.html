@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Погнали</title>
 </head>
-<body class="page__body">
+<body class="page-body">
 <header class="page-header">
   <div class="page-header__logo">
     <a class="page-header__link">
@@ -44,44 +44,48 @@
         <div class="user-login">
           <button class="user-login__button" type="button">Авторизация</button>
         </div>
-        <div class="contacts-menu__wrapper">
-          <div class="contacts-menu__phone">
-            <svg class="contacts-menu__icon-phone" width="45" height="45">
-              <use xlink:href="img/phone.svg#phone"></use>
-            </svg>
-            <p class="contacts-menu__number">8 800 555-86-28</p>
-          </div>
-          <div class="contacts-menu__email">
-            <svg class="contacts-menu__icon-email" width="45" height="45">
-              <use xlink:href="img/email.svg#email"></use>
-            </svg>
-            <p class="contacts-menu__text">mail@htmlacademy.ru</p>
+        <div class="contacts-menu">
+          <div class="contacts-menu__wrapper">
+            <div class="contacts-menu__phone">
+              <svg class="contacts-menu__icon-phone" width="45" height="45">
+                <use xlink:href="img/phone.svg#phone"></use>
+              </svg>
+              <p class="contacts-menu__number">8 800 555-86-28</p>
+            </div>
+            <div class="contacts-menu__email">
+              <svg class="contacts-menu__icon-email" width="45" height="45">
+                <use xlink:href="img/email.svg#email"></use>
+              </svg>
+              <p class="contacts-menu__text">mail@htmlacademy.ru</p>
+            </div>
           </div>
         </div>
-        <div class="social-menu__wrapper">
-          <ul class="social-nav__list social-list">
-            <li class="social-list__item">
-              <a class="social-list__link">
-                <svg class="social-list__icon-facebook" width="11" height="21">
-                  <use xlink:href="img/facebook.svg#icon-menu"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-list__item">
-              <a class="social-list__link">
-                <svg class="social-list__icon-vkontakte" width="23" height="12">
-                  <use xlink:href="img/vkontakte.svg#icon-menu"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-list__item">
-              <a class="social-list__link">
-                <svg class="social-list__icon-instagram" width="18" height="18">
-                  <use xlink:href="img/instagram.svg#icon-menu"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+        <div class="social-menu">
+          <div class="social-menu__wrapper">
+            <ul class="social-menu__list social-list">
+              <li class="social-menu__item">
+                <a class="social-menu__link">
+                  <svg class="social-list__icon-facebook" width="11" height="21">
+                    <use xlink:href="img/facebook.svg#icon-menu"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a class="social-list__link">
+                  <svg class="social-list__icon-vkontakte" width="23" height="12">
+                    <use xlink:href="img/vkontakte.svg#icon-menu"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a class="social-list__link">
+                  <svg class="social-list__icon-instagram" width="18" height="18">
+                    <use xlink:href="img/instagram.svg#icon-menu"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -90,82 +94,79 @@
 <main class="page-main">
   <section class="block-promo">
     <div class="block-promo__wrapper">
-      <div class="block-promo--background">
-        <img class="block-promo__background-image" src="https://via.placeholder.com/150x150" width="320" height="569" alt="cosmos">
-      </div>
-      <header class="block-promo__header">
-        <h1 class="block-promo__slogan">В путешествие с крутыми попутчиками</h1>
-        <img class="block-promo__traveller-illustration" src="https://via.placeholder.com/150x150" width="192" height="255" alt="traveller">
-        <div class="block-promo__contacts">
-          <div class="block-promo__phone">
-            <a href="#" type="button">
-              <svg class="block-promo__icon-phone" width="40" height="40">
-                <use xlink:href="img/icon-phone.svg#icon-phone"></use>
-              </svg>
-            </a>
-          </div>
-          <div class="block-promo__mail">
-            <a href="#" type="button">
-              <svg class="block-promo__icon-mail" width="40" height="40">
-                <use xlink:href="img/icon-mail.svg#icon-mail"></use>
-              </svg>
-            </a>
-          </div>
-          <div class="user-login">
-            <button class="user-login__button" type="submit">Авторизация</button>
-          </div>
-        </div>
-        <div class="block-promo__review">
-          <h2 class="block-promo__title"> «Лучшее приложение, что я видел в жизни!» </h2>
-          <span class="block-promo__author">Мурат Эльтазин главный редактор газеты «гаджетлайф»</span>
-        </div>
-      </header>
-      <dl class="back-block  back-block--yellow">
-        <div class="back-block__item">
-          <dt class="back-block__graph">
-            Выберите направление
-          </dt>
-          <dd class="back-block__number">
-            1
-          </dd>
-        </div>
-        <div class="back-block__item">
-          <dt class="back-block__graph">
-            Изучите идеи путешественников
-          </dt>
-          <dd class="back-block__number">
-            2
-          </dd>
-        </div>
-        <div class="back-blocks__item">
-          <dt class="back-block__graph">
-            Находите тех, кто похож на вас
-          </dt>
-          <dd class="back-block__number">
-            3
-          </dd>
-        </div>
-        <div class="back-block__item">
-          <dt class="back-block__graph">
-            Путешествуйте вместе!
-          </dt>
-          <dd class="back-block__number">
-            4
-          </dd>
-        </div>
-      </dl>
+      <img class="block-promo__background-image" src="https://via.placeholder.com/150x150" width="320" height="569" alt="cosmos">
     </div>
+    <header class="block-promo__header">
+      <h1 class="block-promo__slogan">В путешествие с крутыми попутчиками</h1>
+      <img class="block-promo__traveller-illustration" src="https://via.placeholder.com/150x150" width="192"
+           height="255" alt="traveller">
+      <div class="block-promo__contacts">
+        <div class="block-promo__phone">
+          <a href="#" type="button">
+            <svg class="block-promo__icon-phone" width="40" height="40">
+              <use xlink:href="img/icon-phone.svg#icon-phone"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="block-promo__mail">
+          <a href="#" type="button">
+            <svg class="block-promo__icon-mail" width="40" height="40">
+              <use xlink:href="img/icon-mail.svg#icon-mail"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="user-login">
+          <button class="user-login__button" type="submit">Авторизация</button>
+        </div>
+      </div>
+      <div class="block-promo__review">
+        <h2 class="block-promo__title"> «Лучшее приложение, что я видел в жизни!» </h2>
+        <span class="block-promo__author">Мурат Эльтазин главный редактор газеты «гаджетлайф»</span>
+      </div>
+    </header>
+    <dl class="back-block  back-block--yellow">
+      <div class="back-item">
+        <dt class="back-block__graph">
+          Выберите направление
+        </dt>
+        <dd class="back-block__number">
+          1
+        </dd>
+      </div>
+      <div class="back-item">
+        <dt class="back-block__graph">
+          Изучите идеи путешественников
+        </dt>
+        <dd class="back-block__number">
+          2
+        </dd>
+      </div>
+      <div class="back-item">
+        <dt class="back-block__graph">
+          Находите тех, кто похож на вас
+        </dt>
+        <dd class="back-block__number">
+          3
+        </dd>
+      </div>
+      <div class="back-item">
+        <dt class="back-block__graph">
+          Путешествуйте вместе!
+        </dt>
+        <dd class="back-block__number">
+          4
+        </dd>
+      </div>
+    </dl>
   </section>
   <section class="desc">
     <div class="desc__wrapper">
-      <div class="desc--background">
-        <img class="desc__background-image" src="https://via.placeholder.com/150x150" width="292" height="353" alt="mobile">
-      </div>
-      <div class="desc__review">
-        <h2 class="desc__title"> О сервисе </h2>
-        <p class="desc__main">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.</p>
-        <span class="desc__addition">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</span>
-      </div>
+      <img class="desc__background-image" src="https://via.placeholder.com/150x150" width="292" height="353" alt="mobile">
+    </div>
+    <div class="desc__review">
+      <h2 class="desc__title"> О сервисе </h2>
+      <p class="desc__main">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.</p>
+      <span class="desc__addition">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</span>
     </div>
   </section>
   <section class="block_countries">
@@ -241,130 +242,128 @@
   </section>
   <section class="users">
     <div class="users__wrapper users__wrapper--violet">
-      <div class="users--background">
-        <img class="users__background-image" src="https://via.placeholder.com/150x150" width="143" height="143" alt="smolov">
-        <img class="users__background-image" src="https://via.placeholder.com/150x150" width="64" height="71" alt="rogovaya">
-        <img class="users__background-image" src="https://via.placeholder.com/150x150" width="113" height="132" alt="back">
-      </div>
-      <h2 class="users__title">Попутчики</h2>
-      <p class="users__description">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
-      <span class="users__addition">Теперь можно легко найти единомышленников!</span>
-      <div class="user-card">
-        <div class="user-card__wrapper">
-          <ul class="user-card__list">
-            <li class="user-card__item">
-              <div class="user-card__item-top">
-                <img class="user-card__image" src="https://via.placeholder.com/150x150" alt="Girl in water" width="270" height="270">
-                <svg class="user-card__icon" width="60" height="60">
-                  <use xlink:href="img/ellips.svg#ellips"></use>
+      <img class="users__background-image" src="https://via.placeholder.com/150x150" width="143" height="143" alt="smolov">
+      <img class="users__background-image" src="https://via.placeholder.com/150x150" width="64" height="71" alt="rogovaya">
+      <img class="users__background-image" src="https://via.placeholder.com/150x150" width="113" height="132" alt="back">
+    </div>
+    <h2 class="users__title">Попутчики</h2>
+    <p class="users__description">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
+    <span class="users__addition">Теперь можно легко найти единомышленников!</span>
+    <div class="user-card">
+      <div class="user-card__wrapper">
+        <ul class="user-card__list">
+          <li class="user-card__item">
+            <div class="user-card__item-top">
+              <img class="user-card__image" src="https://via.placeholder.com/150x150" alt="Girl in water" width="270" height="270">
+              <svg class="user-card__icon" width="60" height="60">
+                <use xlink:href="img/ellips.svg#ellips"></use>
+              </svg>
+            </div>
+            <div class="user-card__item-bottom">
+              <div class="user-card__user">
+                <svg class="user-card__icon-ellipse" width="6" height="6">
+                  <use xlink:href="img/ellipse.svg#ellipse"></use>
                 </svg>
+                <p class="user-card__user-name">Таня Фирсова</p>
+                <p class="user-card__user-description">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
               </div>
-              <div class="user-card__item-bottom">
-                <div class="user-card__user">
-                  <svg class="user-card__icon-ellipse" width="6" height="6">
-                    <use xlink:href="img/ellipse.svg#ellipse"></use>
-                  </svg>
-                  <p class="user-card__user-name">Таня Фирсова</p>
-                  <p class="user-card__user-description">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
-                </div>
-                <div class="user-card__icons-wrapper">
-                  <ul class="user-card__icons-list">
-                    <li class="user-card__icons-item user-card__icons-item--true">
-                      <svg class="user-card__icon-plane" width="21" height="21">
-                        <use xlink:href="img/plane.svg#plane"></use>
-                      </svg>
-                    </li>
-                    <li class="user-card__icons-item">
-                      <svg class="user-card__icon-bus" width="17" height="19">
-                        <use xlink:href="img/bus.svg#bus"></use>
-                      </svg>
-                    </li>
-                    <li class="user-card__icons-item">
-                      <svg class="user-card__icon-bicycle" width="23" height="24">
-                        <use xlink:href="img/bicycle.svg#bicycle"></use>
-                      </svg>
-                    </li>
-                    <li class="user-card__icons-item">
-                      <svg class="user-card__icon-run" width="21" height="23">
-                        <use xlink:href="img/run.svg#run"></use>
-                      </svg>
-                    </li>
-                  </ul>
-                </div>
-                <div class="user-card__flags">
-                  <ul class="user-card__flags-list">
-                    <li class="user-card__flag-item">
-                      <img class="user-card__flag-image" src="https://via.placeholder.com/150x150" alt="Sri-Lanka" width="35" height="25">
-                    </li>
-                    <li class="user-card__flag-item">
-                      <img class="user-card__flag-image" src="https://via.placeholder.com/150x150" alt="Thailand" width="35" height="25">
-                    </li>
-                    <li class="user-card__flag-item">
-                      <img class="user-card__flag-image" src="https://via.placeholder.com/150x150" alt="Seychelles" width="35" height="25">
-                    </li>
-                  </ul>
-                </div>
-            <li class="user-card__item">
-              <div class="user-card__item-top">
-                <img class="user-card__image" src="https://via.placeholder.com/150x150" alt="Demin" width="270" height="270">
-                <svg class="user-card__icon" width="60" height="60">
-                  <use xlink:href="img/ellips.svg#ellips"></use>
+              <div class="user-card__icons-wrapper">
+                <ul class="user-card__icons-list">
+                  <li class="user-card__icons-item user-card__icons-item--true">
+                    <svg class="user-card__icon-plane" width="21" height="21">
+                      <use xlink:href="img/plane.svg#plane"></use>
+                    </svg>
+                  </li>
+                  <li class="user-card__icons-item">
+                    <svg class="user-card__icon-bus" width="17" height="19">
+                      <use xlink:href="img/bus.svg#bus"></use>
+                    </svg>
+                  </li>
+                  <li class="user-card__icons-item">
+                    <svg class="user-card__icon-bicycle" width="23" height="24">
+                      <use xlink:href="img/bicycle.svg#bicycle"></use>
+                    </svg>
+                  </li>
+                  <li class="user-card__icons-item">
+                    <svg class="user-card__icon-run" width="21" height="23">
+                      <use xlink:href="img/run.svg#run"></use>
+                    </svg>
+                  </li>
+                </ul>
+              </div>
+              <div class="user-card__flags">
+                <ul class="user-card__flags-list">
+                  <li class="user-card__flag-item">
+                    <img class="user-card__flag-image" src="https://via.placeholder.com/150x150" alt="Sri-Lanka" width="35" height="25">
+                  </li>
+                  <li class="user-card__flag-item">
+                    <img class="user-card__flag-image" src="https://via.placeholder.com/150x150" alt="Thailand" width="35" height="25">
+                  </li>
+                  <li class="user-card__flag-item">
+                    <img class="user-card__flag-image" src="https://via.placeholder.com/150x150" alt="Seychelles" width="35" height="25">
+                  </li>
+                </ul>
+              </div>
+          <li class="user-card__item">
+            <div class="user-card__item-top">
+              <img class="user-card__image" src="https://via.placeholder.com/150x150" alt="Demin" width="270" height="270">
+              <svg class="user-card__icon" width="60" height="60">
+                <use xlink:href="img/ellips.svg#ellips"></use>
+              </svg>
+            </div>
+            <div class="user-card__item-bottom">
+              <div class="user-card__user">
+                <svg class="user-card__icon-ellipse" width="6" height="6">
+                  <use xlink:href="img/ellipse.svg#ellipse"></use>
                 </svg>
+                <p class="user-card__user-name">Петя Демин</p>
+                <p class="user-card__user-description">#бургер #бар #футбол #концерт #крафт</p>
               </div>
-              <div class="user-card__item-bottom">
-                <div class="user-card__user">
-                  <svg class="user-card__icon-ellipse" width="6" height="6">
-                    <use xlink:href="img/ellipse.svg#ellipse"></use>
-                  </svg>
-                  <p class="user-card__user-name">Петя Демин</p>
-                  <p class="user-card__user-description">#бургер #бар #футбол #концерт #крафт</p>
-                </div>
-                <div class="user-card__icons-wrapper">
-                  <ul class="user-card__icons-list">
-                    <li class="user-card__icons-item user-card__icons-item--true">
-                      <svg class="user-card__icon-plane" width="21" height="21">
-                        <use xlink:href="img/plane.svg#plane"></use>
-                      </svg>
-                    </li>
-                    <li class="user-card__icons-item user-card__icons-item--true">
-                      <svg class="user-card__icon-bus" width="17" height="19">
-                        <use xlink:href="img/bus.svg#bus"></use>
-                      </svg>
-                    </li>
-                    <li class="user-card__icons-item">
-                      <svg class="user-card__icon-bicycle" width="23" height="24">
-                        <use xlink:href="img/bicycle.svg#bicycle"></use>
-                      </svg>
-                    </li>
-                    <li class="user-card__icons-item user-card__icons-item--true">
-                      <svg class="user-card__icon-run" width="21" height="23">
-                        <use xlink:href="img/run.svg#run"></use>
-                      </svg>
-                    </li>
-                  </ul>
-                </div>
-                <div class="user-card__flags">
-                  <ul class="user-card__flags-list">
-                    <li class="user-card__flag-item">
-                      <img class="user-card__flag-image" src="https://via.placeholder.com/150x150" alt="Belgium" width="35" height="24">
-                    </li>
-                    <li class="user-card__flag-item">
-                      <img class="user-card__flag-image" src="https://via.placeholder.com/150x150" alt="Czech" width="35" height="25">
-                    </li>
-                  </ul>
-                </div>
+              <div class="user-card__icons-wrapper">
+                <ul class="user-card__icons-list">
+                  <li class="user-card__icons-item user-card__icons-item--true">
+                    <svg class="user-card__icon-plane" width="21" height="21">
+                      <use xlink:href="img/plane.svg#plane"></use>
+                    </svg>
+                  </li>
+                  <li class="user-card__icons-item user-card__icons-item--true">
+                    <svg class="user-card__icon-bus" width="17" height="19">
+                      <use xlink:href="img/bus.svg#bus"></use>
+                    </svg>
+                  </li>
+                  <li class="user-card__icons-item">
+                    <svg class="user-card__icon-bicycle" width="23" height="24">
+                      <use xlink:href="img/bicycle.svg#bicycle"></use>
+                    </svg>
+                  </li>
+                  <li class="user-card__icons-item user-card__icons-item--true">
+                    <svg class="user-card__icon-run" width="21" height="23">
+                      <use xlink:href="img/run.svg#run"></use>
+                    </svg>
+                  </li>
+                </ul>
               </div>
-            </li>
-          </ul>
-        </div>
+              <div class="user-card__flags">
+                <ul class="user-card__flags-list">
+                  <li class="user-card__flag-item">
+                    <img class="user-card__flag-image" src="https://via.placeholder.com/150x150" alt="Belgium" width="35" height="24">
+                  </li>
+                  <li class="user-card__flag-item">
+                    <img class="user-card__flag-image" src="https://via.placeholder.com/150x150" alt="Czech" width="35" height="25">
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
-      <div class="big-yellow-btn">
-        <button class="big-yellow-btn__button" type="button">Показать всех
-          <svg class="big-yellow-btn__icon" width="13" height="13">
-            <use xlink:href="img/polygon.svg#polygon"></use>
-          </svg>
-        </button>
-      </div>
+    </div>
+    <div class="big-yellow-btn">
+      <button class="big-yellow-btn__button" type="button">Показать всех
+        <svg class="big-yellow-btn__icon" width="13" height="13">
+          <use xlink:href="img/polygon.svg#polygon"></use>
+        </svg>
+      </button>
     </div>
   </section>
   <section class="profile">
@@ -399,7 +398,7 @@
           </dd>
         </div>
       </dl>
-      <a href="" class="profile__toggle">Показать тарифы для бизнеса
+      <a href="#" class="profile__toggle">Показать тарифы для бизнеса
       </a>
     </div>
     <div class="profile-modal">
@@ -410,7 +409,8 @@
             Реклама у блоггера<br>300 000 руб./пост
           </li>
           <li class="profile-modal__item">
-            Накрутка подписчиков<br> от 1 руб./шт.</li>
+            Накрутка подписчиков<br> от 1 руб./шт.
+          </li>
           <li class="profile-modal__item">
             Лайки от ботов<br> от 20 коп./лайк
           </li>
@@ -420,7 +420,7 @@
         </ul>
       </div>
     </div>
-    <button class="profile-modal__toggle button--white" type="button">Закрыть окно</button>
+    <button class="profile__toggle button-white" type="button">Закрыть окно</button>
   </section>
   <section class="feedback">
     <div class="feedback__wrapper feedback__wrapper--background">
@@ -439,18 +439,20 @@
         </div>
       </div>
       <p class="feedback__description">Остались вопросы?<br> Мы с радостью на них ответим!</p>
-      <div class="contacts-menu__wrapper">
-        <div class="contacts-menu__phone">
-          <svg class="contacts-menu__icon-phone" width="45" height="45">
-            <use xlink:href="img/phone.svg#phone"></use>
-          </svg>
-          <p class="contacts-menu__phone contacts-menu__phone--yellow">8 800 555-86-280</p>
-        </div>
-        <div class="contacts-menu__email">
-          <svg class="contacts-menu__icon-email" width="45" height="45">
-            <use xlink:href="img/email.svg#email"></use>
-          </svg>
-          <p class="contacts-menu__email contacts-menu__email--yellow">mail@htmlacademy.ru</p>
+      <div class="contacts-menu">
+        <div class="contacts-menu__wrapper">
+          <div class="contacts-menu__phone">
+            <svg class="contacts-menu__icon-phone" width="45" height="45">
+              <use xlink:href="img/phone.svg#phone"></use>
+            </svg>
+            <p class="contacts-menu__phone contacts-menu__phone--yellow">8 800 555-86-280</p>
+          </div>
+          <div class="contacts-menu__email">
+            <svg class="contacts-menu__icon-email" width="45" height="45">
+              <use xlink:href="img/email.svg#email"></use>
+            </svg>
+            <p class="contacts-menu__email contacts-menu__email--yellow">mail@htmlacademy.ru</p>
+          </div>
         </div>
       </div>
     </div>
@@ -476,39 +478,41 @@
 </main>
 <footer class="page-footer">
   <div class="page-footer__wrapper">
-    <svg class="page-header__icon" width="96" height="15">
+    <svg class="page-footer__icon" width="96" height="15">
       <use xlink:href="img/logo.svg#logo"></use>
     </svg>
-    <div class="social-menu__wrapper">
-      <ul class="social-nav__list social-list">
-        <li class="social-list__item yellow-circle">
-          <a class="social-list__link">
-            <svg class="social-list__icon-facebook" width="11" height="21">
-              <use xlink:href="img/facebook.svg#facebook"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social-list__item yellow-circle">
-          <a class="social-list__link">
-            <svg class="social-list__icon-vkontakte" width="23" height="12">
-              <use xlink:href="img/vkontakte.svg#facebook"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social-list__item yellow-circle">
-          <a class="social-list__link">
-            <svg class="social-list__icon-instagram" width="18" height="18">
-              <use xlink:href="img/instagram.svg#facebook"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="page-footer__copyright copyright">
-      <b class="copyright__text">Разработано:</b>
-      <svg class="copyright__icon" width="27" height="33.3">
-        <use xlink:href="img/htmlacademy.svg#htmlacademy"></use>
-      </svg>
+    <div class="social-menu">
+      <div class="social-menu__wrapper">
+        <ul class="social-menu__list social-list">
+          <li class="social-list__item yellow-circle">
+            <a class="social-list__link">
+              <svg class="social-list__icon-facebook" width="11" height="21">
+                <use xlink:href="img/facebook.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-list__item yellow-circle">
+            <a class="social-list__link">
+              <svg class="social-list__icon-vkontakte" width="23" height="12">
+                <use xlink:href="img/vkontakte.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-list__item yellow-circle">
+            <a class="social-list__link">
+              <svg class="social-list__icon-instagram" width="18" height="18">
+                <use xlink:href="img/instagram.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <svg class="copyright__icon" width="27" height="33.3">
+          <use xlink:href="img/htmlacademy.svg#htmlacademy"></use>
+        </svg>
+      </div>
     </div>
   </div>
 </footer>
