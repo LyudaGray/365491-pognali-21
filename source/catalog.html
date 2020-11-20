@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Погнали</title>
+</head>
+<body class="page-body">
+<header class="page-header">
+  <div class="page-header__wrapper background-violet">
+    <div class="page-header__logo">
+      <a class="page-header__link">
+        <svg class="page-header__icon" width="100" height="15">
+          <use xlink:href="img/logo.svg#logo"><p>Погнали?</p></use>
+        </svg>
+      </a>
+    </div>
+    <nav class="main-nav">
+      <div class="main-nav__wrapper">
+        <div class="main-nav__logo">
+          <a class="main-nav__link">
+            <svg class="main-nav__icon" width="25" height="11">
+              <use xlink:href="img/icon-menu.svg#icon-menu">Погнали?</use>
+            </svg>
+          </a>
+        </div>
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      </div>
+    </nav>
+  </div>
+  <h2 class="page-header__title">Попутчики</h2>
+  <span class="page-header__line orange-line"></span>
+</header>
+<main class="page-main">
+  <div class="page-main__wrapper">
+    <div class="filter-country">
+      <div class="filter-country__wrapper">
+        <svg class="filter-country__icon" width="16" height="10">
+          <use xlink:href="img/filter.svg#filter"></use>
+        </svg>
+        <p class="filter-country__title">Фильтрация по странам:</p>
+        <button class="filter-country__toggle" type="button"><span class="visually-hidden">Фильтр меню</span></button>
+        <div class="filter-country__dropdown-content">
+          <p class="filter-country__dropdown-title">ЕВРОПА</p>
+          <a class="filter-country__dropdown-link" href="#">АЗИЯ</a><br>
+          <a class="filter-country__dropdown-link" href="#">АМЕРИКА</a><br>
+          <a class="filter-country__dropdown-link" href="#">ОСТРОВА</a>
+        </div>
+        <table class="filter-country__table">
+          <tr class="filter-country__row">
+            <td>А</td>
+            <td>Б</td>
+            <td>В</td>
+            <td>Г</td>
+            <td>Д</td>
+          </tr>
+          <tr class="filter-country__row">
+            <td>Е</td>
+            <td>З</td>
+            <td>И</td>
+            <td>К</td>
+            <td>Л</td>
+          </tr>
+          <tr class="filter-country__row">
+            <td>М</td>
+            <td>Н</td>
+            <td>О</td>
+            <td>П</td>
+            <td>Р</td>
+          </tr>
+          <tr class="filter-country__row">
+            <td>С</td>
+            <td>Т</td>
+            <td>У</td>
+            <td>Ф</td>
+            <td>Х</td>
+          </tr>
+          <tr class="filter-country__row">
+            <td>Ч</td>
+            <td>Ш</td>
+            <td>Щ</td>
+            <td>Э</td>
+            <td>Ю</td>
+          </tr>
+        </table>
+        <p>Afghanistan</p>
+        <p>Albania</p>
+        <p>Algeria</p>
+        <p>American Samoa</p>
+        <p>Andorra</p>
+        <p>Angola</p>
+        <p>Anguilla</p>
+        <p>Antigua & Barbuda</p>
+        <p>Argentina</p>
+        <p>Armenia</p>
+        <p>Aruba</p>
+        <p>Australia</p>
+        <p>Austria</p>
+        <p>Azerbaijan</p>
+      </div>
+      <button class="filter-country__button" type="submit"><span> x </span> СВЕРНУТЬ</button>
+    </div>
+    <div class="filter-yellow">
+      <div class="filter-yellow__wrapper">
+        <p class="filter-yellow__title">Подберите идеального попутчика</p>
+        <form method="post" action="https://echo.htmlacademy.ru">
+          <div class="filter-dropdown">
+            <div class="filter-dropdown__content">
+              <p class="filter-dropdown__title"><b>Хобби</b></p>
+              <i class="fa fa-caret-down"></i>
+            </div>
+          </div>
+          <div class="filter-dropdown">
+            <div class="filter-dropdown__content">
+              <p class="filter-dropdown__title"><b>Музыка</b></p>
+              <i class="fa fa-caret-down"></i>
+              <input type="checkbox" name="option1" value="" checked><br>
+              <input type="checkbox" name="option2" value="" checked><br>
+              <input type="checkbox" name="option3" value="">
+            </div>
+          </div>
+          <div class="filter-dropdown">
+            <div class="filter-dropdown__content">
+              <p class="filter-dropdown__title"><b>Еда</b></p>
+              <i class="fa fa-caret-down"></i>
+            </div>
+          </div>
+          <div class="filter-dropdown">
+            <div class="filter-dropdown__content">
+              <p class="filter-dropdown__title"><b>Транспорт</b></p>
+              <i class="fa fa-caret-up"></i>
+              <div class="filter-dropdown__icons">
+                <ul class="filter-dropdown__icons-list">
+                  <li class="filter-dropdown__icons-item filter-dropdown__icons-item--true">
+                    <svg class="filter-dropdown__icon-plane" width="21" height="21">
+                      <use xlink:href="img/plane.svg#plane"></use>
+                    </svg>
+                  </li>
+                  <li class="filter-dropdown__icons-item filter-dropdown__icons-item--true">
+                    <svg class="filter-dropdown__icon-bus" width="17" height="19">
+                      <use xlink:href="img/bus.svg#bus"></use>
+                    </svg>
+                  </li>
+                  <li class="filter-dropdown__icons-item">
+                    <svg class="filter-dropdown__icon-bicycle" width="23" height="24">
+                      <use xlink:href="img/bicycle.svg#bicycle"></use>
+                    </svg>
+                  </li>
+                  <li class="filter-dropdown__icons-item filter-dropdown__icons-item--true">
+                    <svg class="filter-dropdown__icon-run" width="21" height="23">
+                      <use xlink:href="img/run.svg#run"></use>
+                    </svg>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="filter-dropdown">
+            <div class="filter-dropdown__content">
+              <p class="filter-dropdown__title"><b>Левел</b></p>
+              <i class="fa fa-caret-down"></i>
+              <input type="number" name="quantity" min="1" max="100" value="30">
+              <span> - </span>
+              <input type="number" name="quantity" min="1" max="100" value="100"><br>
+              <input type="range" min="1" max="100" value="30" step="1">
+              <input type="range" min="1" max="100" value="100" step="1">
+            </div>
+          </div>
+          <button class="filter-yellow__button" type="submit">Показать</button>
+        </form>
+      </div>
+    </div>
+    <div class="cart-name">
+      <div class="cart-name__wrapper">
+        <div class="cart-name__photo">
+          <img class="cart-name__image" src="https://via.placeholder.com/150x150" alt="firsova" width="70" height="70">
+        </div>
+        <div class="cart-name__description">
+          <p class="cart-name__title">Таня Фирсова
+            <span class="cart-name__ellips">o</span></p>
+        </div>
+        <div class="button-like">
+          <p class="button-like__number">
+            <button class="button-like__button">
+              <svg class="button-like____icon" width="21" height="23">
+                <use xlink:href="img/heart.svg#heart"></use>
+              </svg>
+            </button>
+            1,5 M
+          </p>
+        </div>
+        <p class="cart-name__teg">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
+        <span class="cart-name__line">--</span>
+        <span>хочет посетить:</span>
+        <span class="cart-name__line">-----</span>
+        <ul class="cart-name__flags-list">
+          <li class="cart-name__flag-item">
+            <img class="cart-name__flag-image" src="https://via.placeholder.com/150x150" alt="sri-lanka" width="26" height="18">
+            <p>ШРИ-ЛАНКА</p>
+          </li>
+          <li class="cart-name__flag-item">
+            <img class="cart-name__flag-image" src="https://via.placeholder.com/150x150" alt="thailand" width="26" height="18">
+            <p class="cart-name__flag-name">ТАЙЛАНД</p>
+          </li>
+          <li class="cart-name__flag-item">
+            <img class="cart-name__flag-image" src="https://via.placeholder.com/150x150" alt="seychelles" width="26" height="18">
+            <p class="cart-name__flag-name">СЕЙШЕЛЫ</p>
+          </li>
+        </ul>
+        <div class="cart-name__transport-icons">
+          <span class="cart-name__line">--</span>
+          <span>транспорт:</span>
+          <span class="cart-name__line">-----</span>
+          <ul class="cart-name__transport-list">
+            <li class="cart-name__transport-item cart-name__transport-item--true">
+              <svg class="cart-name__transport-plane" width="21" height="21">
+                <use xlink:href="img/plane.svg#plane"></use>
+              </svg>
+            </li>
+            <li class="cart-name__transport-item">
+              <svg class="cart-name__transport-bus" width="17" height="19">
+                <use xlink:href="img/bus.svg#bus"></use>
+              </svg>
+            </li>
+            <li class="cart-name__transport-item">
+              <svg class="cart-name__transport-bicycle" width="23" height="24">
+                <use xlink:href="img/bicycle.svg#bicycle"></use>
+              </svg>
+            </li>
+            <li class="cart-name__transport-item">
+              <svg class="cart-name__transport-run" width="21" height="23">
+                <use xlink:href="img/run.svg#run"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+        <div class="cart-name__transport-level">
+          <span>левел:</span>
+          <span class="cart-name__line">--</span>
+          <svg class="cart-name__transport-level" width="45" height="45">
+            <use xlink:href="img/mark-level.svg#mark-level"><p>99</p></use>
+          </svg>
+        </div>
+        <div class="big-yellow-btn">
+          <button class="big-yellow-btn__button" type="button">Позвать!</button>
+        </div>
+      </div>
+    </div>
+    <div class="cart-name">
+      <div class="cart-name__wrapper">
+        <div class="cart-name__photo">
+          <img class="cart-name__image" src="https://via.placeholder.com/150x150" alt="demin" width="70" height="70">
+        </div>
+        <div class="cart-name__description">
+          <p class="cart-name__title">Петя Демин
+            <span class="cart-name__ellips">o</span></p>
+        </div>
+        <div class="button-like">
+          <p class="button-like__number">
+            <button class="button-like__button">
+              <svg class="button-like____icon" width="21" height="23">
+                <use xlink:href="img/heart.svg#heart"></use>
+              </svg>
+            </button>
+            1500
+          </p>
+        </div>
+        <p class="cart-name__teg">#бургер #бар #футбол #концерт #крафт</p>
+        <span class="cart-name__line">--</span>
+        <span>хочет посетить:</span>
+        <span class="cart-name__line">-----</span>
+        <ul class="cart-name__flags-list">
+          <li class="cart-name__flag-item">
+            <img class="cart-name__flag-image" src="https://via.placeholder.com/150x150" alt="sri-lanka" width="26" height="18">
+            <p class="cart-name__flag-name">БЕЛЬГИЯ</p>
+          </li>
+          <li class="cart-name__flag-item">
+            <img class="cart-name__flag-image" src="https://via.placeholder.com/150x150" alt="thailand" width="26" height="18">
+            <p class="cart-name__flag-name">ЧЕХИЯ</p>
+          </li>
+        </ul>
+        <div class="cart-name__transport-icons">
+          <span class="cart-name__line">--</span>
+          <span>транспорт:</span>
+          <span class="cart-name__line">-----</span>
+          <ul class="cart-name__transport-list">
+            <li class="cart-name__transport-item cart-name__transport-item--true">
+              <svg class="cart-name__transport-plane" width="21" height="21">
+                <use xlink:href="img/plane.svg#plane"></use>
+              </svg>
+            </li>
+            <li class="cart-name__transport-item cart-name__transport-item--true">
+              <svg class="cart-name__transport-bus" width="17" height="19">
+                <use xlink:href="img/bus.svg#bus"></use>
+              </svg>
+            </li>
+            <li class="cart-name__transport-item">
+              <svg class="cart-name__transport-bicycle" width="23" height="24">
+                <use xlink:href="img/bicycle.svg#bicycle"></use>
+              </svg>
+            </li>
+            <li class="cart-name__transport-item cart-name__transport-item--true">
+              <svg class="cart-name__transport-run" width="21" height="23">
+                <use xlink:href="img/run.svg#run"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+        <div class="cart-name__transport-level">
+          <span>левел:</span>
+          <span class="cart-name__line">--</span>
+          <svg class="cart-name__transport-level" width="45" height="45">
+            <use xlink:href="img/mark-level.svg#mark-level"><p>80</p></use>
+          </svg>
+        </div>
+        <div class="big-yellow-btn">
+          <button class="big-yellow-btn__button" type="button">Позвать!</button>
+        </div>
+      </div>
+    </div>
+    <div class="cart-name">
+      <div class="cart-name__wrapper">
+        <div class="cart-name__photo">
+          <img class="cart-name__image" src="https://via.placeholder.com/150x150" alt="smolov" width="70" height="70">
+        </div>
+        <div class="cart-name__description">
+          <p class="cart-name__title">Марк Смолов
+            <span class="cart-name__ellips">o</span></p>
+        </div>
+        <div class="button-like">
+          <p class="button-like__number">
+            <button class="button-like__button">
+              <svg class="button-like____icon" width="21" height="23">
+                <use xlink:href="img/heart.svg#heart"></use>
+              </svg>
+            </button>
+            170
+          </p>
+        </div>
+        <p class="cart-name__teg">#рэп #тату #хайпбист #кроссовки #суприм</p>
+        <span class="cart-name__line">--</span>
+        <span>хочет посетить:</span>
+        <span class="cart-name__line">-----</span>
+        <ul class="cart-name__flags-list">
+          <li class="cart-name__flag-item">
+            <img class="cart-name__flag-image" src="https://via.placeholder.com/150x150" alt="usa" width="26" height="18">
+            <p class="cart-name__flag-name">США</p>
+          </li>
+          <li class="cart-name__flag-item">
+            <img class="cart-name__flag-image" src="https://via.placeholder.com/150x150" alt="australia" width="26" height="18">
+            <p class="cart-name__flag-name">АВСТРАЛИЯ</p>
+          </li>
+          <li class="cart-name__flag-item">
+            <img class="cart-name__flag-image" src="https://via.placeholder.com/150x150" alt="dominik" width="26" height="18">
+            <p class="cart-name__flag-name">ДОМИНИКАНА</p>
+          </li>
+        </ul>
+        <div class="cart-name__transport-icons">
+          <span class="cart-name__line">--</span>
+          <span>транспорт:</span>
+          <span class="cart-name__line">-----</span>
+          <ul class="cart-name__transport-list">
+            <li class="cart-name__transport-item cart-name__transport-item--true">
+              <svg class="cart-name__transport-plane" width="21" height="21">
+                <use xlink:href="img/plane.svg#plane"></use>
+              </svg>
+            </li>
+            <li class="cart-name__transport-item">
+              <svg class="cart-name__transport-bus" width="17" height="19">
+                <use xlink:href="img/bus.svg#bus"></use>
+              </svg>
+            </li>
+            <li class="cart-name__transport-item cart-name__transport-item--true">
+              <svg class="cart-name__transport-bicycle" width="23" height="24">
+                <use xlink:href="img/bicycle.svg#bicycle"></use>
+              </svg>
+            </li>
+            <li class="cart-name__transport-item">
+              <svg class="cart-name__transport-run" width="21" height="23">
+                <use xlink:href="img/run.svg#run"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+        <div class="cart-name__transport-level">
+          <span>левел:</span>
+          <span class="cart-name__line">--</span>
+          <svg class="cart-name__transport-level" width="45" height="45">
+            <use xlink:href="img/mark-level.svg#mark-level"><p>25</p></use>
+          </svg>
+        </div>
+        <div class="big-yellow-btn">
+          <button class="big-yellow-btn__button" type="button">Позвать!</button>
+        </div>
+      </div>
+    </div>
+    <div class="cart-name">
+      <div class="cart-name__wrapper">
+        <div class="cart-name__photo">
+          <img class="cart-name__image" src="https://via.placeholder.com/150x150" alt="rogovaya" width="70" height="70">
+        </div>
+        <div class="cart-name__description">
+          <p class="cart-name__title">Лариса Роговая
+            <span class="cart-name__ellips">o</span></p>
+        </div>
+        <div class="button-like">
+          <p class="button-like__number">
+            <button class="button-like__button">
+              <svg class="button-like____icon" width="21" height="23">
+                <use xlink:href="img/heart.svg#heart"></use>
+              </svg>
+            </button>
+            23
+          </p>
+        </div>
+        <p class="cart-name__teg">#образование #карьера #учеба #линкедин</p>
+        <span class="cart-name__line">--</span>
+        <span>хочет посетить:</span>
+        <span class="cart-name__line">-----</span>
+        <ul class="cart-name__flags-list">
+          <li class="cart-name__flag-item">
+            <img class="cart-name__flag-image" src="https://via.placeholder.com/150x150" alt="england" width="26" height="18">
+            <p class="cart-name__flag-name">ВЕЛИКОБРИТАНИЯ</p>
+          </li>
+          <li class="cart-name__flag-item">
+            <img class="cart-name__flag-image" src="https://via.placeholder.com/150x150" alt="germany" width="26" height="18">
+            <p class="cart-name__flag-name">ГЕРМАНИЯ</p>
+          </li>
+        </ul>
+        <div class="cart-name__transport-icons">
+          <span class="cart-name__line">--</span>
+          <span>транспорт:</span>
+          <span class="cart-name__line">-----</span>
+          <ul class="cart-name__transport-list">
+            <li class="cart-name__transport-item cart-name__transport-item--true">
+              <svg class="cart-name__transport-plane" width="21" height="21">
+                <use xlink:href="img/plane.svg#plane"></use>
+              </svg>
+            </li>
+            <li class="cart-name__transport-item cart-name__transport-item--true">
+              <svg class="cart-name__transport-bus" width="17" height="19">
+                <use xlink:href="img/bus.svg#bus"></use>
+              </svg>
+            </li>
+            <li class="cart-name__transport-item">
+              <svg class="cart-name__transport-bicycle" width="23" height="24">
+                <use xlink:href="img/bicycle.svg#bicycle"></use>
+              </svg>
+            </li>
+            <li class="cart-name__transport-item">
+              <svg class="cart-name__transport-run" width="21" height="23">
+                <use xlink:href="img/run.svg#run"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+        <div class="cart-name__transport-level">
+          <span>левел:</span>
+          <span class="cart-name__line">--</span>
+          <svg class="cart-name__transport-level" width="45" height="45">
+            <use xlink:href="img/mark-level.svg#mark-level"><p>50</p></use>
+          </svg>
+        </div>
+        <div class="big-yellow-btn">
+          <button class="big-yellow-btn__button" type="button">Позвать!</button>
+        </div>
+      </div>
+    </div>
+    <div class="show-more">
+      <p class="show-more__title"><span>+</span> ПОКАЗАТЬ ЕЩЕ </p>
+      <button class="show-more__button" type="button" name="button">
+        <p><span class="show-more__arrow-left">влево</span>
+          <span class="show-more__arrow-right">вправо</span></p>
+      </button>
+    </div>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <svg class="page-footer__icon" width="96" height="15">
+          <use xlink:href="img/logo.svg#logo"><p>Погнали?</p></use>
+        </svg>
+        <div class="social-menu">
+          <div class="social-menu__wrapper">
+            <nav class="social-nav">
+              <ul class="social-nav__list social-list">
+                <li class="social-list__item yellow-circle">
+                  <a class="social-list__link">
+                    <svg class="social-list__icon-facebook" width="11" height="21">
+                      <use xlink:href="img/facebook.svg#facebook"><p>Facebook</p></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-list__item yellow-circle">
+                  <a class="social-list__link">
+                    <svg class="social-list__icon-vkontakte" width="23" height="12">
+                      <use xlink:href="img/vkontakte.svg#facebook"><p>VK</p></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-list__item yellow-circle">
+                  <a class="social-list__link">
+                    <svg class="social-list__icon-instagram" width="18" height="18">
+                      <use xlink:href="img/instagram.svg#instagram"><p>Instagram</p></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <hr align="left" width="320">
+          <div class="page-footer__copyright copyright">
+            <b class="copyright__text">Разработано:</b>
+            <svg class="copyright__icon" width="27" height="33.3">
+              <use xlink:href="img/htmlacademy.svg#htmlacademy"><p>HtmlAcademy</p></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</main>
+</body>
+</html>
