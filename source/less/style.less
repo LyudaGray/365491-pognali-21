@@ -6,9 +6,10 @@
 //Blocks
 @import "blocks/page.less";
 
+
 .page-header {
   position: relative;
-  background-image: url("../img/globe-back-mobile 1.jpg");
+  background-image: url("../img/globe-back-mobile_1.jpg");
   width: 320px;
   height: 569px;
   margin: 0;
@@ -48,6 +49,11 @@
   left: 80px;
 }
 
+.block-promo {
+  width: 320px;
+  min-width: 320px;
+}
+
 .block-promo__contacts {
   position: absolute;
   left: 26px;
@@ -81,16 +87,28 @@
   display: block;
 }
 
-.block-promo__slogan {
+
+.block-promo__header {
+  width: 270px;
+  margin: 0 auto;
+}
+
+h1.block-promo__slogan {
   position: absolute;
+  width: 238px;
+  display: block;
   text-align: center;
   color: @color-white;
   top: 70px;
+  left: 40px;
   line-height: 40px;
   font-family: "Blogger Sans", "Arial", serif;
-  font-weight: bold;
+  font-weight: 700;
+  font-style: normal;
   font-size: 36px;
-  margin-left: 20px;
+  margin: 20px auto;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .review {
@@ -110,7 +128,8 @@
   margin-left: 46px;
   line-height: 22px;
   font-family: "Blogger Sans", "Arial", serif;
-  font-weight: lighter;
+  font-weight: 300;
+  font-style: normal;
   font-size: 16px;
 }
 
@@ -120,7 +139,8 @@
   margin-left: 46px;
   line-height: 22px;
   font-family: "Blogger Sans", "Arial", serif;
-  font-weight: bold;
+  font-weight: 700;
+  font-style: normal;
   font-size: 16px;
 }
 
@@ -154,7 +174,8 @@
   color: @color-white;
   line-height: 18px;
   font-family: "Blogger Sans", "Arial", serif;
-  font-weight: bold;
+  font-weight: 700;
+  font-style: normal;
   font-size: 18px;
 }
 
@@ -214,7 +235,8 @@
   color: @color-white;
   line-height: 22px;
   font-family: "Blogger Sans", "Arial", serif;
-  font-weight: lighter;
+  font-weight: 300;
+  font-style: normal;
   font-size: 16px;
 }
 
@@ -222,16 +244,18 @@
   color: @color-white;
   line-height: 22px;
   font-family: "Blogger Sans", "Arial", serif;
-  font-weight: bold;
+  font-weight: 700;
+  font-style: normal;
   font-size: 16px;
 }
 
-.desc__title {
+h2.desc__title {
   color: @special-orange;
   text-align: left;
   line-height: 24px;
   font-family: "Blogger Sans", "Arial", serif;
-  font-weight: bold;
+  font-weight: 700;
+  font-style: normal;
   font-size: 24px;
   margin-top: 60px;
 }
@@ -241,7 +265,8 @@
   text-align: left;
   line-height: 18px;
   font-family: "Blogger Sans", "Arial", serif;
-  font-weight: bold;
+  font-weight: 700;
+  font-style: normal;
   font-size: 18px;
   padding-top: 23px;
   padding-bottom: 23px;
@@ -284,19 +309,22 @@
 .cart-country__flag-thailand {
   position: absolute;
   top: 95px;
-  left: 45px;
+  left: 25px;
+  z-index: 10;
 }
 
 .cart-country__flag-czech {
   position: absolute;
   top: 95px;
-  left: 45px;
+  left: 25px;
+  z-index: 10;
 }
 
 .cart-country__flag-france {
   position: absolute;
   top: 95px;
-  left: 45px;
+  left: 25px;
+  z-index: 10;
 }
 
 .cart-country__list {
@@ -318,7 +346,8 @@
   text-align: left;
   line-height: 24px;
   font-family: "Blogger Sans", "Arial", serif;
-  font-weight: bold;
+  font-weight: 700;
+  font-style: normal;
   font-size: 24px;
 }
 
@@ -326,7 +355,8 @@
   color: @special-grey;
   line-height: 22px;
   font-family: "Blogger Sans", "Arial", serif;
-  font-weight: lighter;
+  font-weight: 300;
+  font-style: normal;
   font-size: 16px;
 }
 
@@ -336,7 +366,8 @@
   box-sizing: border-box;
   line-height: 21px;
   font-family: "Blogger Sans", "Arial", serif;
-  font-weight: bold;
+  font-weight: 700;
+  font-style: normal;
   font-size: 21px;
   margin-right: auto;
   margin-bottom: 0;
@@ -348,9 +379,11 @@
   box-sizing: border-box;
   line-height: 18px;
   font-family: "Blogger Sans", "Arial", serif;
-  font-weight: normal;
+  font-weight: 500;
+  font-style: normal;
   font-size: 16px;
   margin-top: 0;
+  opacity: 30%;
 }
 
 .cart-country__item-stats {
@@ -359,20 +392,23 @@
   box-sizing: border-box;
   line-height: 20px;
   font-family: "Blogger Sans", "Arial", serif;
-  font-weight: normal;
+  font-weight: 500;
+  font-style: normal;
   font-size: 16px;
+  opacity: 30%;
 }
 
 .cart-country__item-bottom {
   background-color: @color-white;
   height: 89px;
   width: 270px;
-  margin-top: -15px;
+  margin-top: -10px;
   border-radius: 10px;
   margin-bottom: 10px;
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
+  z-index: 5;
 }
 
 .yellow-button {
@@ -381,7 +417,8 @@
   flex-wrap: nowrap;
   align-items: center;
   justify-content: space-between;
-  margin: 0 auto;
+  margin: 20px auto;
+  padding: 0;
 }
 
 .yellow-button__button {
@@ -389,7 +426,8 @@
   color: @basic-blue-light;
   line-height: 18px;
   font-family: "Blogger Sans", "Arial", serif;
-  font-weight: bold;
+  font-weight: 700;
+  font-style: normal;
   font-size: 18px;
   height: 62px;
   width: 270px;
@@ -415,7 +453,8 @@
   color: @special-orange;
   line-height: 24px;
   font-family: "Blogger Sans", "Arial", serif;
-  font-weight: bold;
+  font-weight: 700;
+  font-style: normal;
   font-size: 24px;
   padding-top: 70px;
 }
@@ -425,7 +464,8 @@
   color: @color-white;
   line-height: 22px;
   font-family: "Blogger Sans", "Arial", serif;
-  font-weight: lighter;
+  font-weight: 300;
+  font-style: normal;
   font-size: 16px;
 }
 
@@ -433,7 +473,8 @@
   color: @color-white;
   line-height: 22px;
   font-family: "Blogger Sans", "Arial", serif;
-  font-weight: bold;
+  font-weight: 700;
+  font-style: normal;
   font-size: 16px;
 }
 
@@ -495,8 +536,9 @@
   background-color: @color-white;
   height: 158px;
   width: 270px;
-  margin-top: -15px;
-  border-radius: 10px;
+  //margin-top: -15px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   margin-bottom: 10px;
   text-align: center;
 }
@@ -513,7 +555,8 @@
   color: @basic-blue-light;
   line-height: 21px;
   font-family: "Blogger Sans", "Arial", serif;
-  font-weight: bold;
+  font-weight: 700;
+  font-style: normal;
   font-size: 21px;
 }
 
@@ -521,7 +564,8 @@
   color: @special-grey;
   line-height: 18px;
   font-family: "Blogger Sans", "Arial", serif;
-  font-weight: normal;
+  font-weight: 400;
+  font-style: normal;
   font-size: 16px;
 }
 
@@ -615,7 +659,8 @@
   color: @special-orange;
   line-height: 24px;
   font-family: "Blogger Sans", "Arial", serif;
-  font-weight: bold;
+  font-weight: 700;
+  font-style: normal;
   font-size: 24px;
 }
 
@@ -676,7 +721,8 @@
   color: @special-orange;
   line-height: 24px;
   font-family: "Blogger Sans", "Arial", serif;
-  font-weight: bold;
+  font-weight: 700;
+  font-style: normal;
   font-size: 24px;
   text-align: center;
 }
@@ -687,7 +733,8 @@
   color: @special-grey;
   line-height: 22px;
   font-family: "Blogger Sans", "Arial", serif;
-  font-weight: lighter;
+  font-weight: 300;
+  font-style: normal;
   font-size: 16px;
   padding-bottom: 15px;
   padding-top: 15px;
@@ -702,7 +749,8 @@
   color: @special-grey;
   line-height: 16px;
   font-family: "Blogger Sans", "Arial", serif;
-  font-weight: lighter;
+  font-weight: 300;
+  font-style: normal;
   font-size: 16px;
   flex-wrap: nowrap;
   white-space: nowrap;
@@ -714,7 +762,8 @@
   color: @special-grey;
   line-height: 16px;
   font-family: "Blogger Sans", "Arial", serif;
-  font-weight: bold;
+  font-weight: 700;
+  font-style: normal;
   font-size: 16px;
   text-align: center;
 }
@@ -727,7 +776,8 @@
   color: @basic-blue-light;
   line-height: 59px;
   font-family: "Blogger Sans", "Arial", serif;
-  font-weight: bold;
+  font-weight: 700;
+  font-style: normal;
   font-size: 16px;
   text-align: center;
   text-transform: uppercase;
@@ -761,7 +811,8 @@
   color: @special-orange;
   line-height: 24px;
   font-family: "Blogger Sans", "Arial", serif;
-  font-weight: bold;
+  font-weight: 700;
+  font-style: normal;
   font-size: 24px;
   text-align: center;
 }
@@ -770,7 +821,8 @@
   color: @color-white;
   line-height: 22px;
   font-family: "Blogger Sans", "Arial", serif;
-  font-weight: lighter;
+  font-weight: 300;
+  font-style: normal;
   font-size: 16px;
   text-align: center;
   white-space: nowrap;
@@ -783,7 +835,8 @@
   color: @basic-yellow;
   line-height: 22px;
   font-family: "Blogger Sans", "Arial", serif;
-  font-weight: lighter;
+  font-weight: 300;
+  font-style: normal;
   font-size: 16px;
 }
 
@@ -798,7 +851,8 @@
   height: 51px;
   color: @special-grey;
   font-family: "Blogger Sans", "Arial", serif;
-  font-weight: bold;
+  font-weight: 700;
+  font-style: normal;
   font-size: 18px;
   line-height: 18px;
   border-radius: 10px;
@@ -809,7 +863,8 @@
 .feedback__button button {
   background-color: @basic-yellow;
   font-family: "Blogger Sans", "Arial", serif;
-  font-weight: bold;
+  font-weight: 700;
+  font-style: normal;
   width: 60px;
   height: 55px;
   font-size: 18px;
@@ -851,7 +906,8 @@
 .contacts-menu__phone--yellow {
   color: @basic-yellow;
   font-family: "Blogger Sans", "Arial", serif;
-  font-weight: bold;
+  font-weight: 700;
+  font-style: normal;
   font-size: 16px;
   line-height: 22px;
   text-transform: uppercase;
@@ -864,7 +920,8 @@
 .contacts-menu__email--yellow {
   color: @basic-yellow;
   font-family: "Blogger Sans", "Arial", serif;
-  font-weight: bold;
+  font-weight: 700;
+  font-style: normal;
   font-size: 16px;
   line-height: 22px;
   text-transform: uppercase;
@@ -917,7 +974,8 @@
 .contact__text {
   color: @basic-blue-light;
   font-family: "Blogger Sans", "Arial", serif;
-  font-weight: bold;
+  font-weight: 700;
+  font-style: normal;
   font-size: 16px;
   line-height: 22px;
   text-transform: uppercase;
@@ -1021,7 +1079,8 @@
 .copyright__text {
   color: @special-grey;
   font-family: "Blogger Sans", "Arial", serif;
-  font-weight: normal;
+  font-weight: 400;
+  font-style: normal;
   font-size: 16px;
   line-height: 16px;
 }
