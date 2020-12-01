@@ -11,5 +11,3 @@ npm-debug.*
 source/css/*.css
 source/css/*.map
 Thumbs.db
-source/form.html
-source/catalog.html
