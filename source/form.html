@@ -1,0 +1,606 @@
+<!doctype html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Academy: Погнали</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+<body class="page-body">
+<header class="form-header">
+  <div class="form-header__background">
+    <div class="form-header__wrapper">
+      <div class="form-header__header">
+        <div class="form-header__logo">
+          <a class="form-header__link">
+            <img src="img/logo_mobile_3.png" alt="logo" width="96" height="15">
+          </a>
+        </div>
+        <nav class="form-nav">
+          <div class="form-nav__wrapper">
+            <div class="form-nav__logo">
+              <a class="form-nav__link">
+                <svg width="25" height="11" viewBox="0 0 25 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="25" height="3" rx="1.5" fill="white"/>
+                  <rect y="8" width="25" height="3" rx="1.5" fill="white"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <h1 class="form-header__title">Направления</h1>
+      <span class="form-header__line orange-line"></span>
+    </div>
+  </div>
+</header>
+<main class="form-main">
+  <div class="form-main__wrapper">
+    <div class="form-main__wrapper2">
+      <div class="form-main__user">
+        <img class="form-main__level-svg" src="img/mark_level.svg" alt="level" width="100" height="100">
+        <img class="form-main__image" src="img/demin-desktop_1.png" width="100" height="100" alt="demin">
+      </div>
+      <button class="form-main__button" type="submit">сменить фото</button>
+      <div class="tags__list tags">
+        <form action="#">
+          <fieldset class="tags__fieldset">
+            <legend class="tags__legend">Теги</legend>
+            <p class="tags__description">#бургер #бар #футбол #концерт #крафт</p>
+          </fieldset>
+        </form>
+      </div>
+      <div class="tags transport">
+        <form action="#">
+          <fieldset class="tags__fieldset">
+            <legend class="tags__legend">Транспорт</legend>
+            <div class="tags__wrapper">
+              <ul class="tags__icons-list">
+                <li class="tags__icons-item tags__icons-item-form user-card__icons-item--true">
+                  <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="15.7585" cy="15.7585" r="15.7585" fill="white"/>
+                    <g clip-path="url(#clip0)">
+                      <path
+                        d="M20.9146 8.9277C20.3249 9.05994 19.7325 9.19281 19.5121 9.55688L17.8065 12.7625L8.64828 14.8163L8.27723 15.8406L15.2853 16.4657L14.0963 19.2408L11.4385 19.8368L10.7712 20.9275L12.6886 21.1239L12.9073 22.0159C13.0052 22.3321 13.349 22.5432 13.6425 22.4774L14.5284 22.2787L15.5554 23.9305L16.2227 22.8398L15.5667 20.1638L17.491 17.8502L21.1627 23.9287L21.9031 23.1363L19.6435 13.9179L21.7185 10.9442C21.9416 10.5795 21.7961 9.98572 21.6499 9.38919C21.5774 9.09371 21.2081 8.86188 20.9146 8.9277Z"
+                        fill="#1D2E5B"/>
+                    </g>
+                    <defs>
+                      <clipPath id="clip1">
+                        <rect width="16.858" height="16.125" fill="white" transform="translate(7.32956 8.0625)"/>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </li>
+                <li class="user-card__icons-item user-card__icons-item-form user-card__icons-item--true">
+                  <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="15.7585" cy="15.7585" r="15.7585" fill="white"/>
+                    <g clip-path="url(#clip0)">
+                      <path
+                        d="M11.545 19.0045C11.545 18.6865 11.4078 18.4151 11.1336 18.1901C10.8593 17.9652 10.5284 17.8527 10.1407 17.8527C9.7531 17.8527 9.42216 17.9652 9.14789 18.1901C8.87362 18.4151 8.73649 18.6865 8.73649 19.0045C8.73649 19.3224 8.87362 19.5939 9.14789 19.8188C9.42216 20.0438 9.7531 20.1562 10.1407 20.1562C10.5284 20.1562 10.8593 20.0438 11.1336 19.8188C11.4078 19.5939 11.545 19.3224 11.545 19.0045ZM22.7789 19.0045C22.7789 18.6865 22.6418 18.4151 22.3675 18.1901C22.0933 17.9652 21.7623 17.8527 21.3747 17.8527C20.9871 17.8527 20.6561 17.9652 20.3818 18.1901C20.1076 18.4151 19.9704 18.6865 19.9704 19.0045C19.9704 19.3224 20.1076 19.5939 20.3818 19.8188C20.6561 20.0438 20.9871 20.1562 21.3747 20.1562C21.7623 20.1562 22.0933 20.0438 22.3675 19.8188C22.6418 19.5939 22.7789 19.3224 22.7789 19.0045ZM22.2743 15.4411L21.4844 11.9858C21.4478 11.8478 21.3655 11.7353 21.2376 11.6483C21.1096 11.5613 20.9615 11.5179 20.7932 11.5179H10.7222C10.554 11.5179 10.4059 11.5613 10.2779 11.6483C10.1499 11.7353 10.0676 11.8478 10.031 11.9858L9.24114 15.4411C9.20457 15.6211 9.25577 15.7801 9.39473 15.918C9.53369 16.056 9.71288 16.125 9.93229 16.125H21.5831C21.8025 16.125 21.9817 16.056 22.1207 15.918C22.2597 15.7801 22.3109 15.6211 22.2743 15.4411ZM19.7949 9.93415C19.7949 9.81417 19.7437 9.71219 19.6413 9.62821C19.5389 9.54422 19.4146 9.50223 19.2683 9.50223H12.2471C12.1008 9.50223 11.9765 9.54422 11.8741 9.62821C11.7717 9.71219 11.7205 9.81417 11.7205 9.93415C11.7205 10.0541 11.7717 10.1561 11.8741 10.2401C11.9765 10.3241 12.1008 10.3661 12.2471 10.3661H19.2683C19.4146 10.3661 19.5389 10.3241 19.6413 10.2401C19.7437 10.1561 19.7949 10.0541 19.7949 9.93415ZM24.1832 16.4579V21.8839H22.7789V23.0357C22.7789 23.3537 22.6418 23.6251 22.3675 23.8501C22.0933 24.075 21.7623 24.1875 21.3747 24.1875C20.9871 24.1875 20.6561 24.075 20.3818 23.8501C20.1076 23.6251 19.9704 23.3537 19.9704 23.0357V21.8839H11.545V23.0357C11.545 23.3537 11.4078 23.6251 11.1336 23.8501C10.8593 24.075 10.5284 24.1875 10.1407 24.1875C9.7531 24.1875 9.42216 24.075 9.14789 23.8501C8.87362 23.6251 8.73649 23.3537 8.73649 23.0357V21.8839H7.33224V16.4579C7.33224 15.7861 7.42367 15.1172 7.60651 14.4513L8.73649 10.3661C8.80231 9.89816 9.15886 9.48723 9.80613 9.1333C10.4534 8.77937 11.2945 8.51242 12.3294 8.33245C13.3643 8.15248 14.5071 8.0625 15.7577 8.0625C17.0084 8.0625 18.1511 8.15248 19.186 8.33245C20.2209 8.51242 21.062 8.77937 21.7093 9.1333C22.3566 9.48723 22.7131 9.89816 22.7789 10.3661L23.9309 14.4513C24.0991 15.0632 24.1832 15.7321 24.1832 16.4579Z"
+                        fill="#1D2E5B"/>
+                    </g>
+                    <defs>
+                      <clipPath id="clip3">
+                        <rect width="16.858" height="16.125" fill="white" transform="translate(7.32956 8.0625)"/>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </li>
+                <li class="tags__icons-item tags__icons-item-form">
+                  <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="15.7585" cy="15.7585" r="15.7585" fill="white"/>
+                    <path opacity="0.15"
+                          d="M20.1047 22.1719C19.5056 22.1719 18.9199 22.0019 18.4218 21.6836C17.9237 21.3652 17.5354 20.9127 17.3061 20.3832C17.0769 19.8538 17.0169 19.2712 17.1338 18.7091C17.2506 18.1471 17.5391 17.6308 17.9628 17.2256C18.3864 16.8204 18.9262 16.5444 19.5138 16.4326C20.1014 16.3208 20.7104 16.3782 21.2639 16.5975C21.8174 16.8168 22.2905 17.1882 22.6234 17.6647C22.9562 18.1412 23.1339 18.7014 23.1339 19.2744C23.133 20.0426 22.8136 20.7791 22.2457 21.3223C21.6778 21.8655 20.9078 22.171 20.1047 22.1719ZM20.1047 17.3848C19.714 17.3848 19.332 17.4956 19.0072 17.7032C18.6823 17.9109 18.4291 18.206 18.2795 18.5513C18.13 18.8966 18.0909 19.2765 18.1671 19.6431C18.2434 20.0096 18.4315 20.3463 18.7078 20.6106C18.9841 20.8749 19.3361 21.0548 19.7193 21.1278C20.1025 21.2007 20.4997 21.1632 20.8607 21.0202C21.2217 20.8772 21.5302 20.635 21.7473 20.3242C21.9644 20.0135 22.0803 19.6482 22.0803 19.2744C22.0796 18.7734 21.8713 18.2931 21.501 17.9389C21.1306 17.5846 20.6285 17.3854 20.1047 17.3848Z"
+                          fill="#1D2E5B"/>
+                    <path opacity="0.15"
+                          d="M11.4123 22.1719C10.8132 22.1719 10.2276 22.0019 9.72942 21.6836C9.23127 21.3652 8.84302 20.9127 8.61375 20.3832C8.38448 19.8538 8.32449 19.2712 8.44137 18.7091C8.55825 18.1471 8.84675 17.6308 9.27039 17.2256C9.69402 16.8204 10.2338 16.5444 10.8214 16.4326C11.409 16.3208 12.018 16.3782 12.5715 16.5975C13.125 16.8168 13.5981 17.1882 13.931 17.6647C14.2638 18.1412 14.4415 18.7014 14.4415 19.2744C14.4406 20.0426 14.1212 20.7791 13.5533 21.3223C12.9854 21.8655 12.2154 22.171 11.4123 22.1719ZM11.4123 17.3848C11.0216 17.3848 10.6397 17.4956 10.3148 17.7032C9.9899 17.9109 9.73669 18.206 9.58717 18.5513C9.43764 18.8966 9.39852 19.2765 9.47475 19.6431C9.55097 20.0096 9.73913 20.3463 10.0154 20.6106C10.2917 20.8749 10.6437 21.0548 11.0269 21.1278C11.4101 21.2007 11.8074 21.1632 12.1683 21.0202C12.5293 20.8772 12.8379 20.635 13.0549 20.3242C13.272 20.0135 13.3879 19.6482 13.3879 19.2744C13.3873 18.7734 13.1789 18.2931 12.8086 17.9389C12.4382 17.5846 11.9361 17.3854 11.4123 17.3848Z"
+                          fill="#1D2E5B"/>
+                    <path opacity="0.15"
+                          d="M17.8658 12.0938C18.0045 12.0942 18.142 12.0684 18.2703 12.0177C18.3986 11.967 18.5151 11.8925 18.613 11.7985C18.711 11.7045 18.7885 11.5928 18.8411 11.47C18.8937 11.3471 18.9203 11.2155 18.9194 11.0828C18.9209 10.9507 18.8949 10.8197 18.8429 10.6973C18.7908 10.575 18.7138 10.4638 18.6163 10.3702C18.5189 10.2767 18.4028 10.2027 18.2751 10.1525C18.1474 10.1024 18.0104 10.0771 17.8723 10.0781C17.734 10.0777 17.5969 10.1034 17.4689 10.1536C17.3409 10.2039 17.2245 10.2778 17.1264 10.3711C17.0282 10.4644 16.9502 10.5752 16.8969 10.6974C16.8435 10.8195 16.8159 10.9504 16.8154 11.0828C16.815 11.2151 16.8418 11.3463 16.8944 11.4687C16.9469 11.5911 17.0242 11.7025 17.1217 11.7963C17.2192 11.8902 17.3351 11.9648 17.4628 12.0158C17.5905 12.0669 17.7274 12.0933 17.8658 12.0938Z"
+                          fill="#1D2E5B"/>
+                    <path opacity="0.15"
+                          d="M19.4314 14.1094H17.9906C17.9669 14.1094 17.9437 14.1033 17.9234 14.0918C17.903 14.0803 17.8863 14.0637 17.875 14.0439L16.8299 12.2119C16.7563 12.0757 16.6502 11.9581 16.5202 11.8684C16.3902 11.7788 16.2399 11.7197 16.0816 11.6959C15.9233 11.6722 15.7614 11.6844 15.6089 11.7316C15.4564 11.7789 15.3178 11.8598 15.2041 11.9678L12.9039 14.185C12.7106 14.3736 12.6009 14.6263 12.5977 14.8904C12.5977 15.4384 13.0125 15.6337 13.2068 15.7439C14.1452 16.2611 14.806 16.6393 15.1685 16.8494C15.1878 16.8606 15.2037 16.8764 15.2148 16.8952C15.2258 16.914 15.2317 16.9352 15.2317 16.9568V19.1336C15.2317 19.4048 15.4497 19.6375 15.7332 19.6511C15.8043 19.6544 15.8755 19.6438 15.9423 19.62C16.009 19.5963 16.0701 19.5598 16.1217 19.5128C16.1733 19.4658 16.2144 19.4093 16.2426 19.3467C16.2707 19.284 16.2852 19.2166 16.2853 19.1484V16.4399C16.2854 16.36 16.2655 16.2811 16.2274 16.2099C16.1893 16.1387 16.134 16.0772 16.066 16.0305L14.8478 15.1925C14.8325 15.182 14.8197 15.1685 14.8103 15.1529C14.8009 15.1374 14.7952 15.12 14.7933 15.1021C14.7915 15.0842 14.7938 15.0662 14.7999 15.0492C14.806 15.0321 14.8158 15.0166 14.8287 15.0035L16.2116 13.5929C16.2258 13.5784 16.2433 13.5673 16.2628 13.5605C16.2824 13.5537 16.3033 13.5514 16.3239 13.5539C16.3445 13.5563 16.3642 13.5633 16.3814 13.5744C16.3987 13.5855 16.4129 13.6004 16.423 13.6178L17.1414 14.858C17.1871 14.9366 17.2539 15.0021 17.3349 15.0477C17.416 15.0933 17.5083 15.1173 17.6024 15.1172H19.4462C19.5176 15.1173 19.5882 15.1035 19.6538 15.0767C19.7195 15.0498 19.7787 15.0105 19.828 14.9611C19.8772 14.9117 19.9155 14.8533 19.9404 14.7893C19.9654 14.7254 19.9764 14.6572 19.973 14.589C19.9592 14.3179 19.7149 14.1094 19.4314 14.1094Z"
+                          fill="#1D2E5B"/>
+                  </svg>
+                </li>
+                <li class="tags__icons-item tags__icons-item-form user-card__icons-item--true">
+                  <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="15.7585" cy="15.7585" r="15.7585" fill="white"/>
+                    <path
+                      d="M19.2706 12.0938C20.0464 12.0938 20.6754 11.4921 20.6754 10.75C20.6754 10.0079 20.0464 9.40625 19.2706 9.40625C18.4947 9.40625 17.8658 10.0079 17.8658 10.75C17.8658 11.4921 18.4947 12.0938 19.2706 12.0938Z"
+                      fill="#1D2E5B"/>
+                    <path
+                      d="M18.4116 15.4323C18.5728 15.6621 18.8041 15.8389 19.074 15.9387C19.3439 16.0384 19.6394 16.0563 19.9203 15.9899L22.2495 15.4329L21.9103 14.1295L19.5811 14.6865L18.6124 13.2977C18.4055 13.0011 18.0843 12.7949 17.719 12.7239L15.0175 12.2066C14.7153 12.1486 14.4015 12.1874 14.1246 12.3169C13.8477 12.4465 13.6231 12.6597 13.4855 12.9235L12.3209 15.1514L13.5775 15.7528L14.7421 13.5242L16.1238 13.7889L12.5513 19.4844H9.4368V20.8281H12.5513C13.0416 20.8281 13.5031 20.5782 13.7559 20.1757L15.1032 18.0284L18.734 18.7231L20.0095 22.3842L21.3413 21.9589L20.0664 18.2985C19.9878 18.0738 19.8486 17.8728 19.6628 17.716C19.4771 17.5591 19.2515 17.4518 19.0086 17.4049L16.874 16.9971L18.1186 15.0124L18.4116 15.4323Z"
+                      fill="#1D2E5B"/>
+                  </svg>
+                </li>
+              </ul>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
+  <section class="plans">
+    <div class="plans__background">
+      <div class="plans__wrapper">
+        <h2 class="plans__todo">Мои планы</h2>
+        <ul class="plans__list">
+          <li class="plans__list-item">
+            <p class="plans__country">1. Франция, Италия</p>
+            <p class="plans__people">3 попутчика</p>
+            <p class="plans__data">26 мар — 29 мар</p>
+            <p class="plans__link"><a href="#">Изменить</a></p>
+          </li>
+          <li class="plans__list-item">
+            <p class="plans__country">2. Таиланд, Индонезия</p>
+            <p class="plans__people">1 попутчик</p>
+            <p class="plans__data">1 июл — 15 июл</p>
+            <p class="plans__link"><a href="#">Изменить</a></p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="add-plan">
+    <div class="add-plan__background">
+      <h2 class="add-plan__title">Добавить план</h2>
+      <div class="add-plan__wrapper slider">
+        <div class="add-plan__inner-wrapper slider__list">
+          <ul class="add-plan__list">
+            <li class="add-plan__item slider__item">
+              <p class="add-plan__text">Шаг 1.<br> Даты пребывания</p>
+              <p class="add-plan__description">Укажите предпочтительное количество попутчиков, которых вы хотели бы
+                позвать в поездку, и ее предполагаемую длительность.</p>
+              <form class="quantity-members" action="https://echo.htmlacademy.ru" method="post">
+                <div class="form-group add-plan__search">
+                  <div class="add-plan__axelerator">
+                    <p class="control-label quantity__label">
+                      <span class="quantity__description">ищу попутчиков:</span></p>
+                    <p><span class="quantity__variable"> ЧЕЛ.</span></p>
+                  </div>
+                  <div class="add-plan__output">
+                    <button class="quantity-minus" type="button"><span>-</span></button>
+                    <output class="quantity-sum">2</output>
+                    <button class="quantity-plus" type="button"><span>+</span></button>
+                  </div>
+                </div>
+                <div class="form-group add-plan__search">
+                  <div class="add-plan__axelerator">
+                    <p class="control-label quantity__label"><span class="quantity__description">длительность:</span>
+                    </p>
+                    <p><span class="quantity__variable"> ДН.</span></p>
+                  </div>
+                  <div class="add-plan__output">
+                    <button class="quantity-minus" type="button"><span>-</span></button>
+                    <output class="quantity-sum">3</output>
+                    <button class="quantity-plus" type="button"><span>+</span></button>
+                  </div>
+                </div>
+                <div class="quantity-checker">
+                  <input class="form-input quantity-option" id="quantity" type="checkbox" checked="checked">
+                  <label for="quantity" class="quantity-confirm">Можно с детьми</label>
+                </div>
+                <div class="datepicker-here"></div>
+                <div class="big-yellow-btn">
+                  <button class="add-plan__button" type="button"> Следующий шаг</button>
+                </div>
+              </form>
+            </li>
+            <li class="add-plan__item slider__item">
+              <p class="add-plan__text">Шаг 2.<br> Маршрут</p>
+              <p class="add-plan__description">Укажите страны, которые вы хотели бы посетить. Это может быть одна или
+                сразу несколько.</p>
+              <form class="choose-countries" action="https://echo.htmlacademy.ru" method="post">
+                <div class="form-group__select">
+                  <select class="form-group__select-countries" name="country-options">
+                    <option class="form-group__option-country" value="bo"> Босния и Герцеговина</option>
+                  </select>
+                  <img class="form-group__blue-circle" src="img/Ellipse_7.png" alt="blue-circle" width="8" height="8">
+                  <output class="form-group__flag-output">
+                    <img class="form-group__flag" src="img/Bosnia-and-Herzegovina_1.png" alt="flag" width="35"
+                         height="24">
+                  </output>
+                  <button class="form-group__close" name="button" type="button">
+                    <img class="form-group__cross-circle" src="img/blue_circle.png" alt="cross" width="21" height="21">
+                  </button>
+                </div>
+                <div class="form-group__select">
+                  <select class="form-group__select-countries" name="country-options">
+                    <option class="form-group__option-country" value="cz"> Чехия</option>
+                  </select>
+                  <img class="form-group__blue-circle" src="img/Ellipse_7.png" alt="blue-circle" width="8" height="8">
+                  <output class="form-group__flag-output">
+                    <img class="form-group__flag" src="img/Czech_1.png" alt="flag" width="35" height="24">
+                  </output>
+                  <button class="form-group__close" name="button" type="button">
+                    <img class="form-group__cross-circle" src="img/blue_circle.png" alt="cross" width="21" height="21">
+                  </button>
+                </div>
+                <div class="dropdown-menu form-group__select">
+                  <img class="dropdown-menu__circle-absolute" src="img/Ellipse_6.png" alt="circle-white" width="8">
+                  <select class="dropdown-menu__select" name="country">
+                    <option value="country" label="Выберите страну"></option>
+                    <option value="Afganistan">Afghanistan</option>
+                    <option value="Albania">Albania</option>
+                    <option value="Algeria">Algeria</option>
+                    <option value="American Samoa">American Samoa</option>
+                    <option value="Andorra">Andorra</option>
+                    <option value="Angola">Angola</option>
+                    <option value="Anguilla">Anguilla</option>
+                    <option value="Antigua & Barbuda">Antigua & Barbuda</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Armenia">Armenia</option>
+                    <option value="Aruba">Aruba</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Austria">Austria</option>
+                    <option value="Azerbaijan">Azerbaijan</option>
+                    <option value="Bahamas">Bahamas</option>
+                    <option value="Bahrain">Bahrain</option>
+                    <option value="Bangladesh">Bangladesh</option>
+                    <option value="Barbados">Barbados</option>
+                    <option value="Belarus">Belarus</option>
+                    <option value="Belgium">Belgium</option>
+                    <option value="Belize">Belize</option>
+                    <option value="Benin">Benin</option>
+                    <option value="Bermuda">Bermuda</option>
+                    <option value="Bhutan">Bhutan</option>
+                    <option value="Bolivia">Bolivia</option>
+                    <option value="Bonaire">Bonaire</option>
+                    <option value="Bosnia & Herzegovina">Bosnia & Herzegovina</option>
+                    <option value="Botswana">Botswana</option>
+                    <option value="Brazil">Brazil</option>
+                    <option value="British Indian Ocean Ter">British Indian Ocean Ter</option>
+                    <option value="Brunei">Brunei</option>
+                    <option value="Bulgaria">Bulgaria</option>
+                    <option value="Burkina Faso">Burkina Faso</option>
+                    <option value="Burundi">Burundi</option>
+                    <option value="Cambodia">Cambodia</option>
+                    <option value="Cameroon">Cameroon</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Canary Islands">Canary Islands</option>
+                    <option value="Cape Verde">Cape Verde</option>
+                    <option value="Cayman Islands">Cayman Islands</option>
+                    <option value="Central African Republic">Central African Republic</option>
+                    <option value="Chad">Chad</option>
+                    <option value="Channel Islands">Channel Islands</option>
+                    <option value="Chile">Chile</option>
+                    <option value="China">China</option>
+                    <option value="Christmas Island">Christmas Island</option>
+                    <option value="Cocos Island">Cocos Island</option>
+                    <option value="Colombia">Colombia</option>
+                    <option value="Comoros">Comoros</option>
+                    <option value="Congo">Congo</option>
+                    <option value="Cook Islands">Cook Islands</option>
+                    <option value="Costa Rica">Costa Rica</option>
+                    <option value="Cote DIvoire">Cote DIvoire</option>
+                    <option value="Croatia">Croatia</option>
+                    <option value="Cuba">Cuba</option>
+                    <option value="Curaco">Curacao</option>
+                    <option value="Cyprus">Cyprus</option>
+                    <option value="Czech Republic">Czech Republic</option>
+                    <option value="Denmark">Denmark</option>
+                    <option value="Djibouti">Djibouti</option>
+                    <option value="Dominica">Dominica</option>
+                    <option value="Dominican Republic">Dominican Republic</option>
+                    <option value="East Timor">East Timor</option>
+                    <option value="Ecuador">Ecuador</option>
+                    <option value="Egypt">Egypt</option>
+                    <option value="El Salvador">El Salvador</option>
+                    <option value="Equatorial Guinea">Equatorial Guinea</option>
+                    <option value="Eritrea">Eritrea</option>
+                    <option value="Estonia">Estonia</option>
+                    <option value="Ethiopia">Ethiopia</option>
+                    <option value="Falkland Islands">Falkland Islands</option>
+                    <option value="Faroe Islands">Faroe Islands</option>
+                    <option value="Fiji">Fiji</option>
+                    <option value="Finland">Finland</option>
+                    <option value="France">France</option>
+                    <option value="French Guiana">French Guiana</option>
+                    <option value="French Polynesia">French Polynesia</option>
+                    <option value="French Southern Ter">French Southern Ter</option>
+                    <option value="Gabon">Gabon</option>
+                    <option value="Gambia">Gambia</option>
+                    <option value="Georgia">Georgia</option>
+                    <option value="Germany">Germany</option>
+                    <option value="Ghana">Ghana</option>
+                    <option value="Gibraltar">Gibraltar</option>
+                    <option value="Great Britain">Great Britain</option>
+                    <option value="Greece">Greece</option>
+                    <option value="Greenland">Greenland</option>
+                    <option value="Grenada">Grenada</option>
+                    <option value="Guadeloupe">Guadeloupe</option>
+                    <option value="Guam">Guam</option>
+                    <option value="Guatemala">Guatemala</option>
+                    <option value="Guinea">Guinea</option>
+                    <option value="Guyana">Guyana</option>
+                    <option value="Haiti">Haiti</option>
+                    <option value="Hawaii">Hawaii</option>
+                    <option value="Honduras">Honduras</option>
+                    <option value="Hong Kong">Hong Kong</option>
+                    <option value="Hungary">Hungary</option>
+                    <option value="Iceland">Iceland</option>
+                    <option value="Indonesia">Indonesia</option>
+                    <option value="India">India</option>
+                    <option value="Iran">Iran</option>
+                    <option value="Iraq">Iraq</option>
+                    <option value="Ireland">Ireland</option>
+                    <option value="Isle of Man">Isle of Man</option>
+                    <option value="Israel">Israel</option>
+                    <option value="Italy">Italy</option>
+                    <option value="Jamaica">Jamaica</option>
+                    <option value="Japan">Japan</option>
+                    <option value="Jordan">Jordan</option>
+                    <option value="Kazakhstan">Kazakhstan</option>
+                    <option value="Kenya">Kenya</option>
+                    <option value="Kiribati">Kiribati</option>
+                    <option value="Korea North">Korea North</option>
+                    <option value="Korea Sout">Korea South</option>
+                    <option value="Kuwait">Kuwait</option>
+                    <option value="Kyrgyzstan">Kyrgyzstan</option>
+                    <option value="Laos">Laos</option>
+                    <option value="Latvia">Latvia</option>
+                    <option value="Lebanon">Lebanon</option>
+                    <option value="Lesotho">Lesotho</option>
+                    <option value="Liberia">Liberia</option>
+                    <option value="Libya">Libya</option>
+                    <option value="Liechtenstein">Liechtenstein</option>
+                    <option value="Lithuania">Lithuania</option>
+                    <option value="Luxembourg">Luxembourg</option>
+                    <option value="Macau">Macau</option>
+                    <option value="Macedonia">Macedonia</option>
+                    <option value="Madagascar">Madagascar</option>
+                    <option value="Malaysia">Malaysia</option>
+                    <option value="Malawi">Malawi</option>
+                    <option value="Maldives">Maldives</option>
+                    <option value="Mali">Mali</option>
+                    <option value="Malta">Malta</option>
+                    <option value="Marshall Islands">Marshall Islands</option>
+                    <option value="Martinique">Martinique</option>
+                    <option value="Mauritania">Mauritania</option>
+                    <option value="Mauritius">Mauritius</option>
+                    <option value="Mayotte">Mayotte</option>
+                    <option value="Mexico">Mexico</option>
+                    <option value="Midway Islands">Midway Islands</option>
+                    <option value="Moldova">Moldova</option>
+                    <option value="Monaco">Monaco</option>
+                    <option value="Mongolia">Mongolia</option>
+                    <option value="Montserrat">Montserrat</option>
+                    <option value="Morocco">Morocco</option>
+                    <option value="Mozambique">Mozambique</option>
+                    <option value="Myanmar">Myanmar</option>
+                    <option value="Nambia">Nambia</option>
+                    <option value="Nauru">Nauru</option>
+                    <option value="Nepal">Nepal</option>
+                    <option value="Netherland Antilles">Netherland Antilles</option>
+                    <option value="Netherlands">Netherlands (Holland, Europe)</option>
+                    <option value="Nevis">Nevis</option>
+                    <option value="New Caledonia">New Caledonia</option>
+                    <option value="New Zealand">New Zealand</option>
+                    <option value="Nicaragua">Nicaragua</option>
+                    <option value="Niger">Niger</option>
+                    <option value="Nigeria">Nigeria</option>
+                    <option value="Niue">Niue</option>
+                    <option value="Norfolk Island">Norfolk Island</option>
+                    <option value="Norway">Norway</option>
+                    <option value="Oman">Oman</option>
+                    <option value="Pakistan">Pakistan</option>
+                    <option value="Palau Island">Palau Island</option>
+                    <option value="Palestine">Palestine</option>
+                    <option value="Panama">Panama</option>
+                    <option value="Papua New Guinea">Papua New Guinea</option>
+                    <option value="Paraguay">Paraguay</option>
+                    <option value="Peru">Peru</option>
+                    <option value="Phillipines">Philippines</option>
+                    <option value="Pitcairn Island">Pitcairn Island</option>
+                    <option value="Poland">Poland</option>
+                    <option value="Portugal">Portugal</option>
+                    <option value="Puerto Rico">Puerto Rico</option>
+                    <option value="Qatar">Qatar</option>
+                    <option value="Republic of Montenegro">Republic of Montenegro</option>
+                    <option value="Republic of Serbia">Republic of Serbia</option>
+                    <option value="Reunion">Reunion</option>
+                    <option value="Romania">Romania</option>
+                    <option value="Russia">Russia</option>
+                    <option value="Rwanda">Rwanda</option>
+                    <option value="St Barthelemy">St Barthelemy</option>
+                    <option value="St Eustatius">St Eustatius</option>
+                    <option value="St Helena">St Helena</option>
+                    <option value="St Kitts-Nevis">St Kitts-Nevis</option>
+                    <option value="St Lucia">St Lucia</option>
+                    <option value="St Maarten">St Maarten</option>
+                    <option value="St Pierre & Miquelon">St Pierre & Miquelon</option>
+                    <option value="St Vincent & Grenadines">St Vincent & Grenadines</option>
+                    <option value="Saipan">Saipan</option>
+                    <option value="Samoa">Samoa</option>
+                    <option value="Samoa American">Samoa American</option>
+                    <option value="San Marino">San Marino</option>
+                    <option value="Sao Tome & Principe">Sao Tome & Principe</option>
+                    <option value="Saudi Arabia">Saudi Arabia</option>
+                    <option value="Senegal">Senegal</option>
+                    <option value="Seychelles">Seychelles</option>
+                    <option value="Sierra Leone">Sierra Leone</option>
+                    <option value="Singapore">Singapore</option>
+                    <option value="Slovakia">Slovakia</option>
+                    <option value="Slovenia">Slovenia</option>
+                    <option value="Solomon Islands">Solomon Islands</option>
+                    <option value="Somalia">Somalia</option>
+                    <option value="South Africa">South Africa</option>
+                    <option value="Spain">Spain</option>
+                    <option value="Sri Lanka">Sri Lanka</option>
+                    <option value="Sudan">Sudan</option>
+                    <option value="Suriname">Suriname</option>
+                    <option value="Swaziland">Swaziland</option>
+                    <option value="Sweden">Sweden</option>
+                    <option value="Switzerland">Switzerland</option>
+                    <option value="Syria">Syria</option>
+                    <option value="Tahiti">Tahiti</option>
+                    <option value="Taiwan">Taiwan</option>
+                    <option value="Tajikistan">Tajikistan</option>
+                    <option value="Tanzania">Tanzania</option>
+                    <option value="Thailand">Thailand</option>
+                    <option value="Togo">Togo</option>
+                    <option value="Tokelau">Tokelau</option>
+                    <option value="Tonga">Tonga</option>
+                    <option value="Trinidad & Tobago">Trinidad & Tobago</option>
+                    <option value="Tunisia">Tunisia</option>
+                    <option value="Turkey">Turkey</option>
+                    <option value="Turkmenistan">Turkmenistan</option>
+                    <option value="Turks & Caicos Is">Turks & Caicos Is</option>
+                    <option value="Tuvalu">Tuvalu</option>
+                    <option value="Uganda">Uganda</option>
+                    <option value="United Kingdom">United Kingdom</option>
+                    <option value="Ukraine">Ukraine</option>
+                    <option value="United Arab Erimates">United Arab Emirates</option>
+                    <option value="United States of America">United States of America</option>
+                    <option value="Uraguay">Uruguay</option>
+                    <option value="Uzbekistan">Uzbekistan</option>
+                    <option value="Vanuatu">Vanuatu</option>
+                    <option value="Vatican City State">Vatican City State</option>
+                    <option value="Venezuela">Venezuela</option>
+                    <option value="Vietnam">Vietnam</option>
+                    <option value="Virgin Islands (Brit)">Virgin Islands (Brit)</option>
+                    <option value="Virgin Islands (USA)">Virgin Islands (USA)</option>
+                    <option value="Wake Island">Wake Island</option>
+                    <option value="Wallis & Futana Is">Wallis & Futana Is</option>
+                    <option value="Yemen">Yemen</option>
+                    <option value="Zaire">Zaire</option>
+                    <option value="Zambia">Zambia</option>
+                    <option value="Zimbabwe">Zimbabwe</option>
+                  </select>
+                  <button class="form-group__close" name="button" type="button">
+                    <img class="form-group__cross-circle" src="img/blue_circle.png" alt="cross" width="21" height="21">
+                  </button>
+                </div>
+                <div class="add-country">
+                  <p class="add-country__name add-country--hover">Добавить страну
+                    <img class="dropdown-menu__circle-absolute" src="img/Ellipse_6.png" alt="circle-white" width="8"
+                         height="8">
+                    <button class="add-country__add-button" type="button">+</button>
+                  </p>
+                </div>
+                <div class="big-yellow-btn">
+                  <button class="add-plan__button" type="button"> Следующий шаг</button>
+                </div>
+                <div class="form-group">
+                  <a class="form-group__link" href="#">на шаг назад</a>
+                </div>
+              </form>
+            </li>
+            <li class="add-plan__item slider__item">
+              <p class="add-plan__text">Шаг 3.<br> Развлечения</p>
+              <p class="add-plan__description">Наконец, расскажите о своих планах времяпровождения. Можно писать в
+                свободной форме и ставить тэги.</p>
+              <form class="entertainment-form" action="https://echo.htmlacademy.ru">
+                <div class="entertainment">
+                  <p class="entertainment__country"><b>Босния и Герцеговина</b>
+                    <img class="entertainment__flag" src="img/Bosnia-and-Herzegovina_1.png" alt="flag" width="35"
+                         height="24">
+                  </p>
+                  <textarea class="entertainment__description-placeholder" name="description" cols="30" rows="10"
+                            placeholder="План действий"></textarea>
+                </div>
+                <div class="form-group">
+                  <p class="entertainment__country"><b>Чехия</b>
+                    <img class="entertainment__flag" src="img/Czech_1.png" alt="flag" width="35" height="24"></p>
+                  <textarea class="entertainment__description-textarea" name="description" cols="30" rows="10">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+                </div>
+                <div class="big-yellow-btn">
+                  <button class="add-plan__button" type="submit">Отправить</button>
+                </div>
+                <div class="form-group">
+                  <a class="form-group__link" href="#">на шаг назад</a>
+                </div>
+              </form>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="form-footer">
+  <div class="form-footer__wrapper">
+    <div class="form-footer__logo-svg">
+      <svg width="100" height="15" viewBox="0 0 100 15" fill="none" xmlns="http://www.w3.org/2000/svg"
+           xmlns:xlink="http://www.w3.org/1999/xlink">
+        <rect width="100" height="15" fill="url(#pattern0)"/>
+        <defs>
+          <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+            <use xlink:href="#image0" transform="scale(0.00787402 0.05)"/>
+          </pattern>
+          <image id="image0" width="127" height="20"
+                 xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAH8AAAAUCAYAAACkjuKKAAAFjUlEQVRoge2Ze4hXRRTHP6u59rAsy8xeaqFGZWmrpj3UwspCioge9iCyJ0GlkRWkPUgqsrAS/GMpwkijrDTL0h6Wm7U9rAxMqk17KoTS1oZbi7kbh74XhuHM3d9v9yqL7Rcu/H7nzpw5M2fmnO+cW9F3wPgW2o9hwJoC9HSi/TgKuBE4ExgAVAK/AR8CTwFLgGYbpUvnYu9SmA6sBW4CBsvxhl7ARGAR8BbQm07n71Iwx98PdG1lUqcDbwDdO52/a2AgcG9iJtsdWZVFh90SHc7PWZLZQP//4wp3YExyTvwG5f1fgJnAbdH7ySnnL86ZZ2qHpbAHcLTyTKOM2dBB17EC6AfsD2wGfuoANpWCI5w284D1+n234/xBOzLsjxazrAdWK8+slEE/A/eJiMR4UjeH1PMxcHvQ5zygRvpHJGyxsPgyUAtc47w3YjQN+BH4Xvba76+Bq7QpzgXeBZYBJ0b9h7dis/dMC/pPDHSflJjDOK2nzf9BoEfw7hOn/argdz/nfUvqqleRMABN4vhIFl71LPw8AkzJ0ZFhE3BxZOh7wNgS+o4HfgW+DIhrvVJSQ9Cui5w4MJCdrYU29AReA07JGcvanhGE1niccXJeOXhcazRYDD2Lwg3SXR/oOgt4PSLoNRrX/NcNmANcpmuchflZalelKHBMZNuqHXHy55boeMPBwJsysFz0AcZEC7KfszEPiRyPGG+Gea043jAhyqneOG3FqMDxhn0i3bZG852b2RhFV8M24AZgb23mWdowXymKxY43zCza+acB1zly2511KjbEME5QXea1c7V4SaXzLiY+3tUn6zdBacPDJnGUFFq7UpWKvChrYzwnDuLhyITcNvwr4loxLDJMBZYX7fxbHdk6VZ0GifTd7LQ5ATg5oXOjKlXZcxgwMscxQxUOs2dUjr1e/rcUMUQLaJxkRk7/PEyVYytkd1swQyc8hdQGtPXs7shXKFo8RhRuisB4R8dFwLf63azcNExEKoRdS953+v8D/FCGbbPLaOuF+wu0YQ1Nyp9DNI+diXHt2Hify/ZwAxhhfTVsVOTJt1OyeyTboLwTY6kj61ugLaWgq3hDiLrA8SEW7WTbLEIucAheqdioG0SNUuTVseMp+ORvdWS9NIHmSN7TabutQFtKwXaN2S1ou6/CdHwD6lGe6nahSSkjPAzLxIvyUkCMt3VzqkylyCJPfpNTFLHFnBzJuifyfl1BdnwgspM9S6NrU4g4nfRWtSyERbNbcsazNTxQxasQf7fR/sqAxaNTfIWzIfPQVYy/QYfSNsHhcfuic/5ix7FzdW9dqkW6w7kmtchRRWC6Jpuhvwo3HpY518CnJVsOHATcCRyb6L+nTtho5513sykFIfu3iHkpsKVMHVOiit5YFbmGh42KZvsPA39FMgurd+l78uLEQoWlyJ2JJ0QoQ1SqhF2rXB9X80JMSswH5dpSkHei7ykz12e40JFVxWVgc/6fUaMG8vGH8zbrs1HFhnKwVjkuQ6y/KUfX744sno/HRbI08J1OdluwVUUVD8uj7xeeDVlk+DSh4x3ggVZ0ePPH4ViuvIvqxCFmJjpmeCj6TPhCNNFngHP0YaQ1PA+cGk2iOjKyOkfHEm24DB8BX0RtNsvGDLZRnw3+P6pvBSnCuUXFoHAcq69/Bix0QrJVLC93bFgY2TBfv9c5PvgmKNVmWKmDkqFOY3lY4MhqY45jtX1U7hypDwQrEgpDHKf6+HqFRu+b8V7AldoIQ1USbdRHnRqF+thRGUbIpjU6RXnoo+8DjaqGeSekm0KhlUpfSnAAK0Jdr/x4gJxqi2t1A3OeyS4RkQvHOVS6bQ0staXCfWjDiw7ZtA86VnewyqLlZ4+h2y0p+3xrNqR4hfEGSxmW+y06Gbe5Vrr/A/Avocc+F49G4KEAAAAASUVORK5CYII="/>
+        </defs>
+      </svg>
+    </div>
+    <div class="social-menu">
+      <div class="social-menu__wrapper">
+        <ul class="social-menu__list social-list">
+          <li class="social-list__item yellow-circle">
+            <a href="#" class="social-list__link">
+              <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="22.5" cy="22.6239" rx="22.5" ry="22.1352" fill="#FFD74B"/>
+                <path
+                  d="M24.4879 32.7695H19.1293V23.2513H17V18.5439H19.0664C18.9093 16.4116 19.3021 14.8547 20.2607 13.7922C20.7178 13.3207 21.2746 12.9439 21.8956 12.686C22.5166 12.4281 23.1881 12.2947 23.8671 12.2944H27.6229V16.8321H24.6686C24.4945 17.3871 24.428 17.9669 24.4721 18.5439H27.615V23.2513H24.4721L24.4879 32.7695ZM20.3157 31.6627H23.2857V22.1446H26.4286V19.6728H23.2857V19.1121C23.2857 17.6364 23.2857 16.3157 24.0714 15.8213L24.2207 15.7254H26.4286V13.4012H23.8986C23.3844 13.395 22.8746 13.4903 22.4023 13.6809C21.9299 13.8716 21.5054 14.1533 21.1564 14.508C20.3707 15.4155 20.0486 16.9354 20.2921 19.0383L20.3707 19.6507H18.1786V22.1446H20.3157V31.6627Z"
+                  fill="#192144"/>
+              </svg>
+            </a>
+          </li>
+          <li class="social-list__item yellow-circle">
+            <a href="#" class="social-list__link">
+              <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="22.5" cy="22.6239" rx="22.5" ry="22.1352" fill="#FFD74B"/>
+                <path
+                  d="M28.7664 28.8542C28.219 28.8419 27.6854 28.6812 27.2232 28.3893C26.7407 28.065 26.2975 27.6862 25.9026 27.2604C25.5761 26.9358 25.0345 26.3898 24.8268 26.3898C24.619 26.3898 24.4706 27.0686 24.478 27.5482C24.4812 27.8792 24.3564 28.1989 24.1293 28.441C23.8712 28.6507 23.5561 28.7791 23.2242 28.8099H21.7997C19.7522 28.7651 17.7918 27.9779 16.2871 26.5964C13.5568 24.1099 11.2122 19.3582 11.1158 19.1516C11.0238 18.979 10.9853 18.7832 11.0051 18.5888C11.0249 18.3945 11.1021 18.2103 11.2271 18.0596C11.5099 17.8251 11.868 17.6994 12.2361 17.7054H15.2632H15.3522C15.6027 17.7418 15.8428 17.8297 16.0571 17.9637C16.2587 18.0981 16.4202 18.2842 16.5245 18.5023C16.8444 19.1834 17.2113 19.8416 17.6226 20.4723C18.5945 21.948 19.0248 22.2874 19.1806 22.3612C19.354 21.6693 19.4017 20.9522 19.3216 20.2436C19.3476 19.9209 19.2941 19.5967 19.1658 19.2992C19.0029 19.1696 18.8029 19.0947 18.5945 19.0852L18.0529 18.5761C17.949 18.0891 18.4906 17.6685 18.869 17.5062C19.6241 17.2709 20.4164 17.1759 21.2061 17.2258H21.7329C22.2686 17.212 22.8041 17.2615 23.328 17.3734C24.5893 17.639 24.5448 18.6499 24.4929 19.8156C24.4929 20.155 24.4558 20.5535 24.4558 21.0109C24.4558 21.1216 24.4558 21.2397 24.4558 21.3651C24.4266 21.6863 24.4492 22.0101 24.5226 22.3243C25.1402 21.8104 25.6604 21.1907 26.0584 20.4945C26.4879 19.8361 26.865 19.1454 27.1861 18.4285V18.4285C27.2839 18.2018 27.4516 18.0118 27.6649 17.8858C27.8782 17.7599 28.1262 17.7044 28.3732 17.7276H31.5487C31.6425 17.7187 31.7369 17.7187 31.8306 17.7276C32.5726 17.7276 33.0103 17.9415 33.1884 18.3547C33.3664 18.7679 33.3145 19.5795 31.4374 21.7562L30.6955 22.5899C30.336 22.937 30.0264 23.3318 29.7755 23.7631C30.0565 24.0808 30.3754 24.3632 30.7251 24.6042C31.5778 25.2432 32.3283 26.0069 32.951 26.8694C33.097 27.0371 33.1925 27.2423 33.2266 27.4616C33.2608 27.6808 33.2321 27.9052 33.1439 28.109C32.9884 28.3346 32.7803 28.5196 32.5375 28.6481C32.2946 28.7765 32.0241 28.8447 31.749 28.8468L28.9371 28.8837L28.7664 28.8542ZM24.8268 25.283C25.4945 25.283 26.0732 25.8659 26.689 26.4783C27.0217 26.8396 27.3951 27.1614 27.8019 27.4375C28.1096 27.641 28.4711 27.7489 28.8406 27.7474H28.9148L31.7342 27.7105C31.8732 27.7026 32.0094 27.6675 32.1348 27.6072L32.0606 27.4892C31.499 26.728 30.8292 26.052 30.0722 25.4822C29.1893 24.7444 28.7368 24.3976 28.6848 23.8295C28.6329 23.2614 29.0484 22.767 29.8793 21.8299L30.6213 21.0109C31.2477 20.3756 31.7618 19.6397 32.1422 18.8343C31.9767 18.8246 31.8107 18.8246 31.6451 18.8343H28.4029C28.3443 18.8213 28.2835 18.8213 28.2248 18.8343C27.8814 19.6175 27.4719 20.3703 27.0006 21.0847C25.5984 23.1654 24.938 23.4458 24.4706 23.4458C24.3257 23.4458 24.183 23.4103 24.0551 23.3425C23.3132 22.9219 23.3132 21.9849 23.3577 21.3061C23.3577 21.1954 23.3577 21.0847 23.3577 20.9888C23.3577 20.5092 23.3577 20.096 23.3948 19.7419C23.4542 18.5023 23.3948 18.4949 23.1129 18.4285C22.6586 18.3392 22.1958 18.2997 21.7329 18.3105H21.221C20.7499 18.3008 20.2787 18.3254 19.8113 18.3842C19.8821 18.4361 19.9446 18.4983 19.9968 18.5687C20.3028 19.0485 20.4554 19.6093 20.4345 20.1772C20.531 21.3946 20.479 22.981 19.6926 23.3646C19.5533 23.4295 19.4011 23.4622 19.2474 23.4606C18.5574 23.4606 17.8748 22.8113 16.71 21.0552C16.263 20.3828 15.8638 19.6802 15.5155 18.9524L15.4561 18.8786C15.3812 18.8406 15.3013 18.8133 15.2187 18.7974H12.251H12.199C12.6368 19.6976 14.7142 23.6819 17.0364 25.77C18.3404 26.9614 20.0299 27.6497 21.7997 27.7105H23.1722C23.2422 27.6957 23.3097 27.6708 23.3726 27.6367C23.3726 27.6367 23.3726 27.6367 23.3726 27.5703C23.3726 27.3711 23.3726 25.652 24.5448 25.3568C24.6356 25.3213 24.7302 25.2965 24.8268 25.283V25.283Z"
+                  fill="#192144"/>
+              </svg>
+            </a>
+          </li>
+          <li class="social-list__item yellow-circle">
+            <a href="#" class="social-list__link">
+              <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="22.5" cy="22.6239" rx="22.5" ry="22.1352" fill="#FFD74B"/>
+                <g clip-path="url(#clip2)">
+                  <path
+                    d="M26.9601 16.0332C27.8188 16.0351 28.6418 16.3715 29.249 16.9688C29.8562 17.5662 30.1982 18.3759 30.2001 19.2207V27.0122C30.1982 27.857 29.8562 28.6667 29.249 29.2641C28.6418 29.8614 27.8188 30.1978 26.9601 30.1997H19.0401C18.1826 30.196 17.3615 29.8587 16.7558 29.2616C16.1502 28.6644 15.8092 27.8558 15.8073 27.0122V19.2207C15.8092 18.3771 16.1502 17.5685 16.7558 16.9713C17.3615 16.3742 18.1826 16.0369 19.0401 16.0332H26.9601ZM26.9601 14.9707H19.0401C17.8944 14.9707 16.7955 15.4185 15.9854 16.2155C15.1752 17.0125 14.7201 18.0935 14.7201 19.2207V27.0122C14.7201 28.1394 15.1752 29.2204 15.9854 30.0174C16.7955 30.8144 17.8944 31.2622 19.0401 31.2622H26.9601C28.1058 31.2622 29.2046 30.8144 30.0148 30.0174C30.8249 29.2204 31.2801 28.1394 31.2801 27.0122V19.2207C31.2801 18.0935 30.8249 17.0125 30.0148 16.2155C29.2046 15.4185 28.1058 14.9707 26.9601 14.9707V14.9707Z"
+                    fill="#192144"/>
+                  <path
+                    d="M23.007 19.9849C23.6379 19.9849 24.2545 20.1689 24.7791 20.5137C25.3036 20.8585 25.7124 21.3486 25.9538 21.9219C26.1953 22.4953 26.2584 23.1262 26.1353 23.7349C26.0123 24.3436 25.7085 24.9027 25.2624 25.3416C24.8163 25.7804 24.248 26.0793 23.6293 26.2003C23.0106 26.3214 22.3692 26.2593 21.7864 26.0218C21.2036 25.7843 20.7055 25.3821 20.355 24.8661C20.0045 24.35 19.8174 23.7434 19.8174 23.1227C19.8165 22.7104 19.8983 22.3019 20.0583 21.9208C20.2182 21.5397 20.4532 21.1934 20.7495 20.9018C21.0459 20.6103 21.3979 20.3792 21.7853 20.2218C22.1727 20.0645 22.5879 19.9839 23.007 19.9849V19.9849ZM23.007 18.9224C22.1623 18.921 21.3361 19.1661 20.633 19.6268C19.9299 20.0875 19.3816 20.743 19.0573 21.5104C18.733 22.2778 18.6475 23.1226 18.8114 23.9378C18.9753 24.7531 19.3814 25.5022 19.9782 26.0903C20.575 26.6785 21.3358 27.0792 22.1642 27.2419C22.9926 27.4045 23.8515 27.3218 24.6321 27.0041C25.4127 26.6863 26.0799 26.148 26.5494 25.4571C27.0188 24.7662 27.2694 23.9538 27.2694 23.1227C27.2704 22.5715 27.1608 22.0254 26.947 21.5159C26.7333 21.0063 26.4194 20.5432 26.0236 20.1531C25.6277 19.7629 25.1575 19.4534 24.6398 19.2422C24.1222 19.0311 23.5674 18.9224 23.007 18.9224Z"
+                    fill="#192144"/>
+                  <path
+                    d="M27.4282 19.7308C27.961 19.7308 28.393 19.3059 28.393 18.7817C28.393 18.2575 27.961 17.8325 27.4282 17.8325C26.8953 17.8325 26.4634 18.2575 26.4634 18.7817C26.4634 19.3059 26.8953 19.7308 27.4282 19.7308Z"
+                    fill="#192144"/>
+                </g>
+                <defs>
+                  <clipPath id="clip2">
+                    <rect width="18" height="17.7081" fill="white" transform="translate(14 14.2617)"/>
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <span class="form-footer__line"></span>
+      </div>
+      <div class="form-footer__copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <div>
+          <a href="http://htmlacademy.com" class="page-footer__link">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="27" height="33.3">
+              <path fill="#2E368F"
+                    d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="js/datepicker.js"></script>
+</body>
+</html>
+
