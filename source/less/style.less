@@ -951,21 +951,25 @@ h2.desc__title {
 .block_countries__wrapper {
   margin: 0 auto;
   min-width: 320px;
+  width: 100%;
+  padding-left: 49px;
 
 
   @media (min-width: @tablet-width) {
-
+    min-width: 768px;
     margin: 0 auto;
-    min-width: 666px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-left: 75px;
   }
 
   @media (min-width: @desktop-width) {
+    background: none;
     min-width: 1440px;
     padding-bottom: 87px;
     margin: 0 auto;
+    padding-left: 60px;
   }
 }
 
@@ -1049,14 +1053,21 @@ h2.desc__title {
   width: 270px;
 
   @media (min-width: @tablet-width) {
+    background: no-repeat url("../img/Rectangle_14.svg") 5% 0%;
+    padding-top: 38px;
+    background-size: initial;
     width: 688px;
-    padding: 0 76px;
-    margin-top: -210px;
+    padding-left: 76px;
+    padding-right: 76px;
+    margin-top: -228px;
   }
 
   @media (min-width: @desktop-width) {
+    background: no-repeat url("../img/Rectangle_14.svg") 10% 0%;
+    padding-top: 71px;
+    background-size: initial;
     width: 560px;
-    margin-top: 186px;
+    margin-top: 115px;
     order: -1;
     padding-left: 9%;
     padding-right: 12%;
@@ -1091,7 +1102,7 @@ h2.desc__title {
   display: block;
 
   @media (min-width: @tablet-width) {
-    padding-top: 73px;
+    padding-top: 0;
     line-height: 45px;
     font-family: "Blogger Sans", "Arial", serif;
     font-weight: 700;
@@ -1148,14 +1159,13 @@ h2.desc__title {
   box-sizing: border-box;
   margin: 0;
 
+
   @media (min-width: @tablet-width) {
     line-height: 33px;
     font-size: 28px;
-    margin-bottom: 104px;
+    padding-bottom: 104px;
     margin-top: 57px;
     width: 378px;
-    padding-bottom: 0;
-    padding-right: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -1163,6 +1173,7 @@ h2.desc__title {
     text-align: left;
     width: 518px;
     padding-right: 4%;
+    padding-bottom: 98px;
   }
 }
 
@@ -1341,7 +1352,7 @@ h2.desc__title {
     width: 275px;
     position: absolute;
     bottom: 138px;
-    right: 26%;
+    right: 17%;
   }
 }
 
@@ -1781,15 +1792,22 @@ h2.desc__title {
   padding: 0 15%;
 
   @media (min-width: @tablet-width) {
+    display: block;
+    min-width: 768px;
     padding: 0 5%;
     width: 100%;
     margin: 0 auto;
+    background: no-repeat url("../img/back-desk.svg") 83% 70%;
+    background-size: initial;
   }
 
   @media (min-width: @desktop-width) {
+    display: block;
     margin: 0 auto;
     width: 100%;
     padding: 0 9%;
+    background: no-repeat url("../img/back-tablet.svg") 60% 55%;
+    background-size: initial;
   }
 }
 
@@ -1808,6 +1826,14 @@ h2.desc__title {
     width: 100%;
     padding: 0 5%;
     padding-top: 90px;
+    padding-bottom: 73px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+    padding: 0 5%;
+    padding-top: 90px;
+    padding-bottom: 83px;
   }
 }
 
@@ -1914,6 +1940,7 @@ h2.desc__title {
   @media (min-width: @tablet-width) {
     display: inline-block;
     padding-top: 30px;
+    padding-bottom: 63px;
     text-align: left;
   }
 
@@ -1948,10 +1975,19 @@ h2.desc__title {
   padding-top: 15px;
   border-bottom: 1px solid #e1e3e9;
 
-
   @media (min-width: @tablet-width) {
     justify-content: flex-start;
     align-items: flex-start;
+  }
+}
+
+.profile__item:first-child {
+  @media (min-width: @tablet-width) {
+    border-top: 1px solid #e1e3e9;
+  }
+
+  @media (min-width: @desktop-width) {
+    border-top: 1px solid #e1e3e9;
   }
 }
 
@@ -2096,6 +2132,7 @@ h2.desc__title {
   position: relative;
   z-index: -3;
   margin-top: -25px;
+  margin-bottom: -25px;
 }
 
 .feedback__wrapper {
@@ -2394,6 +2431,7 @@ h2.desc__title {
   position: relative;
   z-index: -4;
   margin-top: -25px;
+  margin-bottom: -25px;
 }
 
 .contacts-menu__number {
