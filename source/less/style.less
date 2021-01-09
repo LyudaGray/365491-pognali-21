@@ -206,6 +206,7 @@ h1.block-promo__slogan {
 
 .page-header__link {
   display: block;
+  list-style: none;
 }
 
 
@@ -1053,7 +1054,7 @@ h2.desc__title {
   width: 270px;
 
   @media (min-width: @tablet-width) {
-    background: no-repeat url("../img/Rectangle_14.svg") 5% 0%;
+    background: no-repeat url("../img/Rectangle_14.svg") 5% 0;
     padding-top: 38px;
     background-size: initial;
     width: 688px;
@@ -1063,7 +1064,7 @@ h2.desc__title {
   }
 
   @media (min-width: @desktop-width) {
-    background: no-repeat url("../img/Rectangle_14.svg") 10% 0%;
+    background: no-repeat url("../img/Rectangle_14.svg") 10% 0;
     padding-top: 71px;
     background-size: initial;
     width: 560px;
@@ -2616,16 +2617,14 @@ h2.desc__title {
   background-color: @color-white;
   display: block;
   min-width: 320px;
-
   position: relative;
-  margin-top: -85px;
+  margin-top: -43px;
   z-index: 2;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
 
   @media (min-width: @tablet-width) {
     min-width: 767px;
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -2653,6 +2652,7 @@ h2.desc__title {
   padding: 0;
   margin: 0 auto;
   padding-top: 36px;
+  padding-bottom: 19px;
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
@@ -2662,6 +2662,7 @@ h2.desc__title {
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
+    padding-bottom: 32px;
   }
 
   @media (min-width: @desktop-width) {
@@ -2671,6 +2672,7 @@ h2.desc__title {
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
+    padding-bottom: 43px;
   }
 }
 
@@ -2708,11 +2710,17 @@ h2.desc__title {
 
 
 .page-footer__logo-svg {
-  margin: 10px auto;
   display: block;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  box-sizing: border-box;
+  width: 100px;
+  height: 15px;
 
   @media (min-width: @tablet-width) {
     margin: 0;
+    width: 164px;
+    height: 42px;
   }
 }
 
