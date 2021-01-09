@@ -572,7 +572,7 @@ ul.tags__icons-list {
     padding: 0 74px;
   }
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @desktop-width) {
     padding: 0 124px;
   }
 }
@@ -624,6 +624,7 @@ h2.plans__todo {
     letter-spacing: 0.1em;
     font-size: 20px;
     margin: 0;
+    padding: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -694,7 +695,8 @@ h2.plans__todo {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: nowrap;
-    align-self: baseline;
+    align-self: center;
+    flex-wrap: nowrap;
   }
 
   @media (min-width: @desktop-width) {
@@ -720,6 +722,7 @@ h2.plans__todo {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
+    padding: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -769,6 +772,8 @@ h2.plans__todo {
     line-height: 20px;
     font-size: 20px;
     letter-spacing: 0.06em;
+    padding-top: 0;
+    white-space: nowrap;
   }
 
   @media (min-width: @desktop-width) {
