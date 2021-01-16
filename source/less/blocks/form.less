@@ -18,10 +18,14 @@
   min-width: 320px;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
+
+  @media (min-width: @tablet-width) {
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+  }
 }
 
 .form-header__header {
-  min-width: 320px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -29,10 +33,8 @@
   padding-bottom: 61px;
   box-sizing: border-box;
 
-
   @media (min-width: @tablet-width) {
     justify-content: flex-start;
-    min-width: 768px;
     padding-top: 45px;
     padding-right: 40px;
     padding-left: 40px;
@@ -149,6 +151,7 @@ h1.form-header__title {
     padding-bottom: 0;
     vertical-align: middle;
     align-self: center;
+    padding-left: 124px;
   }
 }
 
@@ -239,6 +242,7 @@ h1.form-header__title {
 
   @media (min-width: @desktop-width) {
     margin-top: -4px;
+    margin-left: 124px;
   }
 }
 
@@ -304,6 +308,12 @@ h1.form-header__title {
     flex-direction: row;
     justify-content: space-between;
   }
+}
+
+.form-header__header .main-nav__logo {
+  display: block;
+  width: 25px;
+  height: 11px;
 }
 
 .form-main__user {
@@ -560,6 +570,8 @@ ul.tags__icons-list {
 
   @media (min-width: @tablet-width) {
     padding-bottom: 65px;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
   }
 }
 
@@ -802,6 +814,8 @@ h2.plans__todo {
 
   @media (min-width: @tablet-width) {
     padding-bottom: 63px;
+    border-top-right-radius: 60px;
+    border-top-left-radius: 60px;
   }
 }
 
@@ -916,7 +930,6 @@ h2.add-plan__title {
     order: unset;
   }
 }
-
 
 .form-group.add-plan__search1 {
   display: flex;
