@@ -1326,8 +1326,11 @@ h2.desc__title {
 }
 
 .cart-country__flag-thailand {
+  display: block;
+  width: 35px;
+  height: 24px;
   position: absolute;
-  top: 95px;
+  top: 86px;
   left: 25px;
   z-index: 6;
 
@@ -1340,8 +1343,11 @@ h2.desc__title {
 }
 
 .cart-country__flag-czech {
+  display: block;
+  width: 35px;
+  height: 24px;
   position: absolute;
-  top: 95px;
+  top: 86px;
   left: 25px;
   z-index: 6;
 
@@ -1354,8 +1360,11 @@ h2.desc__title {
 }
 
 .cart-country__flag-france {
+  display: block;
+  width: 35px;
+  height: 24px;
   position: absolute;
-  top: 95px;
+  top: 86px;
   left: 25px;
   z-index: 6;
 
@@ -1565,9 +1574,16 @@ h2.desc__title {
 
 .cart-country__item-users svg {
   display: inline-block;
-  width: 24px;
-  height: 24px;
-  padding-right: 8px;
+  align-self: center;
+  width: 14px;
+  height: 14px;
+  padding-right: 5px;
+
+  @media (min-width: @tablet-width) {
+    width: 24px;
+    height: 24px;
+    padding-right: 8px;
+  }
 }
 
 .cart-country__item-stats {
@@ -1580,6 +1596,7 @@ h2.desc__title {
   font-style: normal;
   font-size: 16px;
   opacity: 30%;
+  align-self: center;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -1693,6 +1710,7 @@ h2.desc__title {
   justify-content: space-between;
   margin-left: 25px;
   margin-right: 25px;
+  margin-top: 25px;
   border: none;
 
   @media (min-width: @tablet-width) {
@@ -1730,10 +1748,11 @@ h2.desc__title {
   padding-bottom: 34px;
   margin: 0 auto;
   box-sizing: border-box;
-
+  width: 270px;
 
   @media (min-width: @tablet-width) {
     padding-bottom: 80px;
+    width: unset;
   }
 
   @media (min-width: @desktop-width) {
@@ -1973,7 +1992,7 @@ h2.desc__title {
   font-weight: 300;
   font-style: normal;
   font-size: 16px;
-  margin: 0 auto;
+  margin: 0;
   padding-top: 19px;
   padding-bottom: 25px;
   box-sizing: border-box;
@@ -2799,7 +2818,7 @@ h2.desc__title {
   padding: 0;
   box-sizing: border-box;
   margin: 0 auto;
-  width: 205px;
+  width: 210px;
   white-space: pre-line;
 
   @media (min-width: @tablet-width) {
@@ -2816,7 +2835,9 @@ h2.desc__title {
 }
 
 .feedback__description br {
-  display: none;
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .feedback__descr {
@@ -3199,8 +3220,8 @@ h2.desc__title {
 
   @media (min-width: @desktop-width) {
     min-width: 1440px;
-    margin-top: -50px;
-    margin-bottom: -50px;
+    margin-top: -61px;
+    margin-bottom: -61px;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
   }
@@ -3260,7 +3281,7 @@ h2.desc__title {
     align-items: center;
     justify-content: space-between;
     flex-wrap: nowrap;
-    padding-top: 116px;
+    padding-top: 148px;
     padding-bottom: 56px;
     margin: 0;
   }
@@ -3275,6 +3296,7 @@ h2.desc__title {
   margin: 0;
   padding-bottom: 33px;
   box-sizing: border-box;
+  text-align: left;
 
   @media (min-width: @tablet-width) {
     padding-bottom: 44px;
