@@ -38,7 +38,23 @@
     border-bottom-right-radius: 60px;
   }
 }
+//
+//#page-header__wrapper {
+//  position: fixed;
+//  //height: 73px;
+//  //background: #fff;
+//  top: 0;
+//  left: 0;
+//  width: 100%;
+//  z-index: 100;
+//  transition: all .3s ease;
+//  //box-shadow: 0 1px 25px rgba(0,0,0, .1);
+//}
 
+#page-header__wrapper.background {
+  background-color: @color-white;
+z-index: 100;
+}
 
 .page-header__background {
   min-width: 320px;
@@ -93,8 +109,17 @@
 
 .block-promo__wrapper {
   display: block;
+  padding-top: 0;
   margin: 0;
-  padding: 0;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 0;
+  }
 }
 
 
@@ -137,12 +162,13 @@ h1.block-promo__slogan {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-top: 19px;
-  padding-bottom: 19px;
-  padding-right: 31px;
+  padding-top: 27px;
+  padding-bottom: 31px;
+  padding-right: 26px;
   padding-left: 26px;
   box-sizing: border-box;
   position: relative;
+  margin: 0 auto;
 
   @media (min-width: @tablet-width) {
     justify-content: flex-start;
@@ -162,6 +188,7 @@ h1.block-promo__slogan {
     padding-left: 60px;
   }
 }
+
 
 .page-header__logo {
   display: block;
@@ -218,14 +245,22 @@ h1.block-promo__slogan {
   min-width: 320px;
   position: absolute;
   z-index: 50;
-  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    min-width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+   display: none;visibility: hidden;
+  }
 }
 
 .main-nav__wrapper {
   margin: 0 auto;
-  padding: 0 25px;
+
   box-sizing: border-box;
   background: @color-white;
+  padding: 0 25px;
 
   @media (min-width: @tablet-width) {
     padding: 0 97px;
@@ -285,6 +320,15 @@ h1.block-promo__slogan {
   }
 }
 
+.desktop-line {
+  @media (min-width: @desktop-width) {
+    display: block;
+    background-color: @color-white;
+    width: 60px;
+    height: 2px;
+  }
+}
+
 .main-nav__list {
   display: flex;
   flex-direction: column;
@@ -292,7 +336,7 @@ h1.block-promo__slogan {
   list-style: none;
   margin: 0 auto;
   text-transform: uppercase;
-  padding-top: 66px;
+  padding-top: 53px;
   padding-bottom: 51px;
   box-sizing: border-box;
   text-align: center;
@@ -354,7 +398,7 @@ h1.block-promo__slogan {
   align-items: center;
   flex-wrap: nowrap;
   vertical-align: middle;
-  z-index: 5;
+z-index: 5;
   padding: 0;
 
   @media (min-width: @tablet-width) {
@@ -419,6 +463,7 @@ h1.block-promo__slogan {
 }
 
 #menu-humb-cross {
+  display: inline-block;
   width: 18px;
   height: 19px;
 
@@ -426,6 +471,11 @@ h1.block-promo__slogan {
     width: 22px;
     height: 22px;
   }
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .block-promo__phone {
@@ -2408,9 +2458,7 @@ h2.desc__title {
 
 .profile-modal {
   background-color: @color-white;
-  min-width: 270px;
-  width: 61%;
-  margin: 0 auto;
+  width: 270px;
   position: absolute;
   z-index: 10;
   border-bottom-left-radius: 20px;
@@ -2418,12 +2466,27 @@ h2.desc__title {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   margin-left: 25px;
+  margin-right: 25px;
+  padding: 0;
+  margin-top: -20px;
+
+  @media (min-width: @tablet-width) {
+    width: 700px;
+    margin-left: 38px;
+    margin-right: 38px;
+    margin-top: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 750px;
+    margin-left: 363px;
+    margin-right: 327px;
+    margin-top: 99px;
+  }
 }
 
 .profile-modal__wrapper {
   background-color: @color-white;
-  //padding: 0 25px;
-  //box-sizing: border-box;
   display: flex;
   flex-direction: column;
   border-radius: 20px;
@@ -2436,6 +2499,14 @@ h2.desc__title {
   padding: 0 25px;
   box-sizing: border-box;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 90px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 58px;
+  }
 }
 
 .profile-modal__title {
@@ -2450,6 +2521,20 @@ h2.desc__title {
   font-size: 24px;
   text-align: center;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    line-height: 45px;
+    font-size: 45px;
+    padding-top: 54px;
+    padding-bottom: 47px;
+  }
+
+  @media (min-width: @desktop-width) {
+    line-height: 45px;
+    font-size: 45px;
+    padding-top: 54px;
+    padding-bottom: 46px;
+  }
 }
 
 .profile-modal__item {
@@ -2465,6 +2550,18 @@ h2.desc__title {
   padding-top: 11px;
   box-sizing: border-box;
   border-bottom: 1px solid #c4c4c4;
+
+  @media (min-width: @tablet-width) {
+    line-height: 28px;
+    font-size: 22px;
+    padding-bottom: 14px;
+    padding-top: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
 }
 
 .profile-modal__item:first-child {
@@ -2518,7 +2615,11 @@ h2.desc__title {
     display: inline;
   }
 }
-
+.profile-modal__item br {
+  @media (min-width: @tablet-width) {
+display:  none;
+  }
+}
 .profile-modal__item-button {
   width: 100%;
   background-color: #f3f4f8;
@@ -2526,6 +2627,10 @@ h2.desc__title {
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   margin-top: 34px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 52px;
+  }
 }
 
 .profile-modal__button-close {
@@ -2547,6 +2652,21 @@ h2.desc__title {
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 41px;
+    padding-bottom: 41px;
+    line-height: 24px;
+    font-size: 24px;
+    text-transform: unset;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 41px;
+    padding-bottom: 45px;
+    line-height: 26px;
+    font-size: 24px;
+  }
 }
 
 .feedback {
@@ -3339,6 +3459,9 @@ h2.desc__title {
 .main-nav .social-menu {
   padding-bottom: 41px;
   box-sizing: border-box;
+  margin: 0 auto;
+  align-self: center;
+  text-align: center;
 
   @media (min-width: @tablet-width) {
     padding-bottom: 91px;
@@ -3394,7 +3517,7 @@ h2.desc__title {
   text-align: center;
   margin-block-end: unset;
   margin-block-start: unset;
-  padding: 0;
+  padding-inline-start:0;
 
   @media (min-width: @tablet-width) {
     margin: 0;
