@@ -141,7 +141,6 @@ function myFunctionCatalog() {
     logo.style.display = "block";
     logoNav.style.display = "none";
     background.style.backgroundColor = "#182044";
-
   }
 }
 
