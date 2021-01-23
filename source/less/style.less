@@ -348,7 +348,8 @@ h1.block-promo__slogan {
 
 .block-promo__contacts {
   position: absolute;
-  left: 26px;
+  margin-left: 0;
+  left: calc(50% - 135px);
   top: 457px;
   display: flex;
   flex-direction: row;
@@ -557,17 +558,16 @@ h1.block-promo__slogan {
     min-width: 768px;
     background: none;
     position: absolute;
-    left: 9%;
+    margin-left: 9%;
     top: 370px;
     padding: 0;
-    margin: 0;
   }
 
   @media (min-width: @desktop-width) {
     background: none;
     position: absolute;
-    left: 76%;
-    top: 221px;
+    margin-left: 76%;
+    top: 190px;
     min-width: 1440px;
     z-index: 6;
   }
@@ -589,7 +589,7 @@ h1.block-promo__slogan {
   @media (min-width: @tablet-width) {
     padding-top: 86px;
     margin: 0;
-    min-width: 768px;
+    width: 768px;
   }
 
   @media (min-width: @desktop-width) {
@@ -937,14 +937,14 @@ dl.back-block__list {
   position: absolute;
   z-index: -1;
   margin-top: -33px;
-  left: 20px;
+  margin-left: -20px;
 
   @media (min-width: @tablet-width) {
     content: url("../img/img_tablet.png");
     width: 376px;
     height: 548px;
     right: 0;
-    left: unset;
+    margin-left: unset;
     margin-top: 0;
   }
 
@@ -977,7 +977,7 @@ dl.back-block__list {
     position: absolute;
     z-index: -2;
     margin-top: -107px;
-    left: 60px;
+    margin-left: 60px;
   }
 }
 
@@ -989,18 +989,21 @@ dl.back-block__list {
   margin: 0 auto;
   padding-bottom: 0;
   padding-top: 84px;
+  width: 320px;
 
   @media (min-width: @tablet-width) {
     padding-left: 74px;
     padding-right: 0;
     padding-bottom: 0;
     margin: 0;
+width: 768px;
   }
 
   @media (min-width: @desktop-width) {
     padding-left: 0;
     margin: 0;
     padding-top: 222px;
+    width: 1440px;
   }
 }
 
@@ -1911,13 +1914,22 @@ h2.desc__title {
   }
 }
 
+.user-card {
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: unset;
+  }
+}
+
 .user-card::before {
   content: url(../img/rogovaya-back-desktop.png);
   display: block;
   width: 64px;
   height: 71px;
   position: absolute;
-  left: 0;
+  margin-left: 0;
   z-index: -1;
   margin-top: -33px;
   padding: 0;
@@ -2022,11 +2034,14 @@ h2.desc__title {
   padding-left: 51px;
   padding-right: 54px;
   box-sizing: border-box;
+  width: 320px;
 
   @media (min-width: @tablet-width) {
     padding-left: 0;
     padding-right: 0;
+    margin: 0 auto;
     margin-bottom: 59px;
+    width: 768px;
   }
 
   @media (min-width: @desktop-width) {
@@ -2204,7 +2219,7 @@ h2.desc__title {
 .profile {
   position: relative;
   background-color: #edeff6;
-  min-width: 320px;
+  width: 100%;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
   z-index: 4;
@@ -2234,13 +2249,15 @@ h2.desc__title {
   padding-left: 49px;
   padding-right: 25px;
   box-sizing: border-box;
+  width: 320px;
 
   @media (min-width: @tablet-width) {
     display: block;
-    padding: 0 5%;
+    padding: 0 40px;
     margin: 0 auto;
-    background: no-repeat url("../img/back-desk.svg") 95% 211px;
+    background: no-repeat url("../img/back-desk.svg") 530px 211px;
     background-size: 198px 285px;
+    width: 768px;
   }
 
   @media (min-width: @desktop-width) {
@@ -2249,6 +2266,7 @@ h2.desc__title {
     padding: 0 9%;
     background: no-repeat url("../img/back-tablet.svg") 78% 335px;
     background-size: initial;
+    width: 1440px;
   }
 }
 
@@ -2282,7 +2300,7 @@ h2.desc__title {
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    padding-right: 40px;
+    padding-right: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -2290,7 +2308,7 @@ h2.desc__title {
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    padding-right: 260px;
+    padding-right: 200px;
   }
 }
 
@@ -2333,6 +2351,9 @@ h2.desc__title {
   @media (min-width: @tablet-width) {
     line-height: 28px;
     font-size: 28px;
+    display: inline-block;
+    box-sizing: border-box;
+    margin-right: 40px;
   }
 
   @media (min-width: @desktop-width) {
@@ -2424,6 +2445,15 @@ h2.desc__title {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+
+  @media (min-width: @tablet-width) {
+width: 688px;
+    margin: 0 auto;
+    }
+  @media (min-width: @desktop-width) {
+    width: 1177px;
+    margin: 0 auto;
+  }
 }
 
 .profile__item {
@@ -2440,6 +2470,12 @@ h2.desc__title {
     justify-content: flex-start;
     padding: 0;
     align-items: center;
+    width: 688px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1177px;
   }
 }
 
@@ -2481,30 +2517,30 @@ h2.desc__title {
 
 .profile-modal {
   background-color: @color-white;
-  width: 270px;
+  width: 84%;
   position: absolute;
   z-index: 10;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  margin-left: 25px;
-  margin-right: 25px;
+  margin-left: 8%;
+  margin-right: 8%;
   padding: 0;
   margin-top: -20px;
 
   @media (min-width: @tablet-width) {
-    width: 700px;
-    margin-left: 38px;
-    margin-right: 38px;
+    margin-left: 5%;
+    margin-right: 5%;
     margin-top: 0;
+    width: 90%;
   }
 
   @media (min-width: @desktop-width) {
-    width: 750px;
-    margin-left: 363px;
-    margin-right: 327px;
+    margin-left: 25%;
+    margin-right: 23%;
     margin-top: 99px;
+    width: 52%;
   }
 }
 
@@ -2595,24 +2631,17 @@ h2.desc__title {
   @media (min-width: @tablet-width) {
     position: absolute;
     bottom: 45px;
-    right: 85px;
+    margin-left: 500px;
     height: 100px;
     width: 100px;
   }
 
   @media (min-width: @desktop-width) {
     position: absolute;
-    bottom: 265px;
-    right: 133px;
+    bottom: 269px;
+    margin-left: 950px;
     width: 198px;
     height: 198px;
-  }
-}
-
-@media (min-width: @tablet-width) {
-  .profile__sum {
-    display: inline-block;
-    box-sizing: border-box;
   }
 }
 
@@ -2975,6 +3004,7 @@ h2.desc__title {
 
   @media (min-width: @tablet-width) {
     padding: 0;
+    width: 618px;
   }
 
   @media (min-width: @desktop-width) {
@@ -3228,11 +3258,13 @@ h2.desc__title {
   padding-top: 53px;
   box-sizing: border-box;
   padding-bottom: 35px;
+  width: 320px;
 
   @media (min-width: @tablet-width) {
     padding: 0 75px;
     padding-top: 102px;
     padding-bottom: 84px;
+    width: 768px;
   }
 
   @media (min-width: @desktop-width) {
@@ -3246,6 +3278,7 @@ h2.desc__title {
     padding-bottom: 56px;
     padding-left: 0;
     padding-right: 0;
+    width: 1022px;
   }
 }
 
